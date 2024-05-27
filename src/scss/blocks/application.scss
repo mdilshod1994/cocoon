@@ -1,0 +1,280 @@
+.application {
+	padding-top: 120px;
+	padding-bottom: 110px;
+	border-radius: 64px;
+	background: radial-gradient(74.82% 65.3% at 20.29% 13.47%, #1d1a24 0%, #18151f 50%, #16131d 100%), #1d1a24;
+  max-width: 1440px;
+  margin: 0 auto;
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__left {
+		width: 44%;
+		max-width: 495px;
+		padding-top: 28px;
+	}
+	&__title {
+		margin-top: 30px;
+		margin-bottom: 27px;
+	}
+	&__subtitle {
+		a {
+			color: #9ba8bf;
+			transition: color 0.3s;
+			&:hover {
+				color: #d668fd;
+				transition: color 0.3s;
+			}
+		}
+		span {
+			&:last-child {
+				display: none;
+			}
+		}
+	}
+	&__nav {
+		display: flex;
+		gap: 16px;
+		margin-top: 100px;
+	}
+	&__link {
+		display: inline-flex;
+		width: 240px;
+		transition: transform 0.3s;
+		img {
+			width: 100%;
+			object-fit: contain;
+		}
+		&:hover {
+			transform: scale(1.05);
+			transition: transform 0.3s;
+		}
+	}
+	&__right {
+		margin-right: -30px;
+		&-body {
+			width: 618px;
+			height: 480px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.application {
+			&__nav {
+				display: none;
+			}
+		}
+	}
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	&__images {
+		position: relative;
+		z-index: 10;
+		top: -14px;
+		left: -20px;
+	}
+	&__img {
+		display: block;
+		width: 230px;
+		height: auto;
+		box-shadow: 0px 6px 64px 0px rgba(17, 15, 22, 0.52);
+		&_1,
+		&_3 {
+			position: absolute;
+		}
+		&_1 {
+			width: 210px;
+			transform: rotate(-15deg);
+			left: -165px;
+			top: 40px;
+			z-index: 10;
+		}
+		&_2 {
+			position: relative;
+			z-index: 16;
+		}
+		&_3 {
+			width: 210px;
+			transform: rotate(15deg);
+			left: 185px;
+			top: 47px;
+			z-index: 10;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+}
+@media (max-width: 1380px) {
+	.application {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		&__right {
+			margin-top: 0;
+			margin-right: 0;
+		}
+	}
+}
+@media (max-width: 1199px) {
+	.application {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		border-radius: 32px;
+		&__title {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		&__nav {
+			margin-top: 60px;
+		}
+		&__link {
+			width: 180px;
+		}
+		&__left {
+			width: 360px;
+			max-width: initial;
+			padding-top: 24px;
+		}
+		&__right {
+			&-body {
+				width: 540px;
+				height: auto;
+			}
+		}
+		&__images {
+			top: 0px;
+			left: 0px;
+		}
+		&__img {
+			width: 210px;
+			&_1 {
+				width: 180px;
+				left: -150px;
+			}
+			&_3 {
+				width: 180px;
+				left: 180px;
+			}
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.application {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		&__wrap {
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		&__left {
+			width: 100%;
+			padding-top: 0;
+			margin-bottom: 30px;
+		}
+		&__nav {
+			margin-top: 30px;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.application {
+		padding-top: 174px;
+		padding-bottom: 100px;
+		background: transparent;
+		&__left {
+			text-align: center;
+			margin-bottom: 44px;
+			.application {
+				&__nav {
+					display: none;
+				}
+			}
+		}
+		&__title {
+			margin-top: 14px;
+			margin-bottom: 17px;
+		}
+		&__subtitle {
+			padding: 0px 10px;
+			letter-spacing: -0.6px;
+			span {
+				&:first-child {
+					display: none;
+				}
+				&:last-child {
+					display: block;
+				}
+			}
+		}
+		&__right {
+			&-body {
+				width: 100%;
+			}
+			.application {
+				&__nav {
+					display: flex;
+				}
+			}
+		}
+		&__nav {
+			width: 210px;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: 52px auto 0;
+		}
+		&__img {
+			width: 32vw;
+			&_1 {
+				width: 29vw;
+				left: -24vw;
+				top: 4vw;
+				&::before {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					border-radius: 15px;
+					opacity: 0.5;
+					background: radial-gradient(118% 112.1% at 95.03% 2.5%, #1d1a24 0%, #18151f 50%, #16131d 100%);
+				}
+			}
+			&_3 {
+				width: 29vw;
+				left: 27vw;
+				top: 4vw;
+				&::before {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					border-radius: 15px;
+					opacity: 0.5;
+					background: radial-gradient(118% 112.1% at 95.03% 2.5%, #1d1a24 0%, #18151f 50%, #16131d 100%);
+				}
+			}
+		}
+	}
+	.dark__bg {
+		.fancybox-toolbar {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-end;
+		}
+	}
+}

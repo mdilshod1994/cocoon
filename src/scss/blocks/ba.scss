@@ -1,0 +1,168 @@
+.ba {
+	overflow: hidden;
+	left: 0;
+	cursor: ew-resize;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	&__image {
+		width: 100%;
+		display: block;
+		max-width: none;
+		object-fit: cover;
+		height: 100%;
+	}
+	&__resize {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		z-index: 50;
+		width: 50%;
+		overflow: hidden;
+		animation-duration: 6s;
+		animation-timing-function: ease;
+		animation-iteration-count: infinite;
+		border-right: 2px solid #fff;
+		&-img {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background-size: cover;
+		}
+	}
+	&__handle {
+		left: 50%;
+		bottom: 0;
+		z-index: 500;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		animation-duration: 6s;
+		animation-timing-function: ease;
+		animation-iteration-count: infinite;
+	}
+	&__inner {
+		top: calc(50% - 24px);
+		position: absolute;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background: var(--gardient-gardient-main, linear-gradient(84deg, #a917dc -4.82%, #ca40fb 102.75%));
+		box-shadow:
+			0px 4.8px 24px 0px rgba(201, 63, 250, 0.3),
+			0px 2.4px 12px 0px rgba(201, 63, 250, 0.3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 100;
+		margin-left: -26px;
+	}
+	&.is-mouseleave {
+		.ba__resize {
+			transition: ease 0.6s;
+		}
+		.ba__handle {
+			transition: left ease 0.6s;
+		}
+	}
+	&.js-animation-play {
+		.ba__resize {
+			animation-name: baAnim;
+		}
+		.ba__handle {
+			animation-name: baAnimHandle;
+		}
+	}
+}
+@-webkit-keyframes baAnim {
+	0%,
+	50%,
+	to {
+		width: 50%;
+	}
+	25% {
+		width: 25%;
+	}
+	75% {
+		width: 75%;
+	}
+}
+@keyframes baAnim {
+	0%,
+	50%,
+	to {
+		width: 50%;
+	}
+	25% {
+		width: 25%;
+	}
+	75% {
+		width: 75%;
+	}
+}
+@-webkit-keyframes baAnimHandle {
+	0%,
+	50%,
+	to {
+		left: 50%;
+	}
+	25% {
+		left: 25%;
+	}
+	75% {
+		left: 75%;
+	}
+}
+@keyframes baAnimHandle {
+	0%,
+	50%,
+	to {
+		left: 50%;
+	}
+	25% {
+		left: 25%;
+	}
+	75% {
+		left: 75%;
+	}
+}
+@-webkit-keyframes baAnimArrow {
+	0%,
+	25%,
+	to {
+		transform: rotate(180deg);
+	}
+	50%,
+	75% {
+		transform: rotate(0);
+	}
+}
+@keyframes baAnimArrow {
+	0%,
+	25%,
+	to {
+		transform: rotate(180deg);
+	}
+	50%,
+	75% {
+		transform: rotate(0);
+	}
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+	.ba {
+		&__inner {
+			top: calc(50% - 24px);
+			width: 48px;
+			height: 48px;
+			margin-left: -24px;
+			&:before {
+				width: 2px;
+				height: 22px;
+			}
+		}
+	}
+}

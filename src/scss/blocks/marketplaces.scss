@@ -1,0 +1,167 @@
+.marketplaces{
+  padding: 200px 0 104px;
+  &__wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+    text-align: center;
+  }
+  &__top{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__title{
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px;
+    letter-spacing: -0.64px;
+  }
+  &__subtitle{
+    color:  #9BA8BF;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.18px;
+  }
+  &__items{
+    display: flex;
+    justify-content: center;
+    gap:16px ;
+  }
+  &__item{
+    display: flex;
+    width: 238.8px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;border-radius: 32px;
+    background: radial-gradient(74.82% 65.3% at 20.29% 13.47%, #1D1A24 0%, #18151F 50%, #16131D 100%);
+    &-logo{
+      width: 96px;
+      height: 96px;
+      display: flex;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-radius: 50%;
+      border: 1px solid #2C2737;
+      background: radial-gradient(164.03% 150.24% at 20.29% 13.47%, #1D1A24 0%, #18151F 50%, #16131D 100%);
+      box-shadow: 0px 2px 32px 0px rgba(0, 0, 0, 0.25);
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 56px;
+        height: 56px;
+        transition: .3s ease-in-out;
+        &:nth-child(2){
+          opacity: 0;
+        }
+      }
+    }
+    &-content{
+      display: flex;
+      flex-direction: column;
+    }
+    &-title{
+      color:#C0C7D4;
+      font-family: "Segoe UI";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: -0.18px;
+    }
+    &-text{
+      color:#3C445E;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.18px;
+    }
+    &:hover  &-logo{
+      img{
+        &:nth-child(1){
+          opacity: 0;
+        }
+        &:nth-child(2){
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1380px) {
+  .marketplaces{
+    &__items{
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width: 760px){
+.marketplaces{
+  padding: 130px 0;
+  &__wrap{
+    gap: 25px;
+  }
+  &__items{
+    gap: 10px;
+  }
+   &__item{
+    width: 173px;
+    padding: 15px 10px;
+    gap: 5px;
+    border-radius: 20px;
+    &-logo{
+      width: 60px;height: 60px;padding: 10px;
+      img{
+        width: 36px;height: 36px;
+      }
+    }
+    &-title{
+      font-size: 17px;
+line-height: 20px;
+letter-spacing: -0.18px;
+    }
+    &-text{
+      font-size: 14px;
+line-height: 24px;
+letter-spacing: -0.18px;
+    }
+  }
+  &__top {
+    padding: 20px 0;
+    gap: 15px;
+  }
+  &__title{
+    font-size: 35px;
+line-height: 35px;
+letter-spacing: -0.35px
+  }
+  &__subtitle{
+    font-size: 15px;
+line-height: 20px;
+letter-spacing: -0.9px;
+  }
+}
+}
+@media (max-width: 450px){
+  .marketplaces{
+    &__item{
+      width: calc(50% - 5px);
+      flex-shrink: 0;
+    }
+  }
+}

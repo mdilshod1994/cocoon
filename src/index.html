@@ -1,0 +1,1433 @@
+@@include('inc/doc-start.html', {
+"title": "Оживите ваш контент магией нейросети"
+})
+
+@@include('inc/page-header.html', {
+color: 'header--light'
+})
+
+<section class="promo">
+	<div class="wrapper wrapper_big promo__body">
+		<div class="promo__left">
+			<div class="promo__left-box">
+				<div class="caption">
+					<div class="caption__icon">
+						<img src="images/icons/star.svg" alt="">
+					</div>
+					<div class="caption__value">Cocoon AI</div>
+				</div>
+				<h1 class="promo__title title">
+					Оживите<br> ваш контент
+					<span>магией нейросети</span>
+				</h1>
+				<div class="promo__subtitle subtitle">Всего за несколько минут получите качественные реалистичные фото
+					вашей
+					одежды
+        </div>
+        <div class="promo__btns">
+          <button class="promo__btn btn">Попробовать бесплатно</button>
+          <button class="promo__btn promo__btn_mobile btn">Скачать приложение</button>
+          <div class="promo__btns-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
+              <path d="M20.4643 25.6122L12.0724 18.8987C11.607 18.5264 11.5686 17.8322 11.99 17.4108L19.6 9.80078L8.74679 15.9057C8.52409 16.031 8.26188 16.0663 8.01399 16.0043L1.47785 14.3702C1.00943 14.2531 0.962634 13.6059 1.40934 13.4226L25.5019 3.53847C26.2544 3.22973 27.0412 3.90086 26.8548 4.69268L22.0624 25.0604C21.8942 25.7756 21.038 26.0712 20.4643 25.6122Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+			</div>
+		</div>
+		<div class="promo__right">
+      <div class="promo__block">
+        <div class="promo-nav">
+          <div class="promo-nav__block">
+            <div class="promo-nav__wrap">
+              <div class="promo-nav__btns">
+                <button class="arrow arrow_prew" id="ba-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.57947 4.58687C9.35166 4.35906 8.98232 4.35906 8.75451 4.58687L3.75451 9.58687C3.52671 9.81468 3.52671 10.184 3.75451 10.4118L8.75451 15.4118C8.98232 15.6396 9.35166 15.6396 9.57947 15.4118C9.80728 15.184 9.80728 14.8147 9.57947 14.5869L5.57528 10.5827L15.8337 10.5827C16.1558 10.5827 16.417 10.3215 16.417 9.99935C16.417 9.67718 16.1558 9.41602 15.8337 9.41602L5.57528 9.41602L9.57947 5.41183C9.80728 5.18402 9.80727 4.81468 9.57947 4.58687Z" fill="white"/>
+                  </svg>
+                </button>
+                <button class="arrow arrow_next" id="ba-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4205 15.4131C10.6483 15.6409 11.0177 15.6409 11.2455 15.4131L16.2455 10.4131C16.4733 10.1853 16.4733 9.81598 16.2455 9.58817L11.2455 4.58817C11.0177 4.36037 10.6483 4.36037 10.4205 4.58817C10.1927 4.81598 10.1927 5.18532 10.4205 5.41313L14.4247 9.41732L4.16634 9.41732C3.84418 9.41732 3.58301 9.67849 3.58301 10.0007C3.58301 10.3228 3.84418 10.584 4.16634 10.584L14.4247 10.584L10.4205 14.5882C10.1927 14.816 10.1927 15.1853 10.4205 15.4131Z" fill="white"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="promo-nav__content">
+                <img src="images/promo-2/star.svg" class="promo-nav__icon" alt="">
+                <div class="promo-nav__texts">
+                  <p>
+                    Генерация
+                    на модели
+                    или маникене
+                  </p>
+                </div>
+              </div>
+              <div class="promo-nav__photo">
+                <img src="images/promo-2/preview.png" alt="" draggable="false" data-ba-person="1" >
+                <img src="images/promo-2/preview-1.png" alt="" draggable="false" data-ba-person="2">
+                <img src="images/promo-2/preview-3.png" alt="" draggable="false" class="-active" data-ba-object="1">
+                <img src="images/promo-2/preview-2.png" alt="" draggable="false" data-ba-object="2">
+              </div>
+            </div>
+            <!-- <img src="images/promo-2/nav-bg.png" alt="" class="promo-nav__bg"> -->
+          </div>
+        </div>
+        <div class="before-after" class="dark-background">
+          <div class="before-after__wrap">
+            <div class="before-after__img">
+              <img src="images/promo-2/model.png" alt="" draggable="false"  data-ba-person="1">
+              <img src="images/promo-2/mannequin.png" alt="" draggable="false" data-ba-person="2">
+              <img src="images/promo-2/chair-after.png" alt="" draggable="false"  class="-active" data-ba-object="1">
+              <img src="images/promo-2/backpack-after.png" alt="" draggable="false" data-ba-object="2">
+            </div>
+            <div id="ba-after" class="before-after__img -after-anim">
+              <img src="images/promo-2/model-after.png" alt="" draggable="false"  data-ba-person="1">
+              <img src="images/promo-2/mannequin-after.png" alt="" draggable="false" data-ba-person="2">
+              <img src="images/promo-2/chair.png" alt="" draggable="false" class="-active" data-ba-object="1">
+              <img src="images/promo-2/backpack.png" alt="" draggable="false" data-ba-object="2">
+            </div>
+            <button id="ba-btn" class="before-after__btn -btn-anim">
+              <div class="before-after__btn-line"></div>
+            </button>
+            <img src="images/promo-2/tr-bg.png" alt="" class="before-after__tr-bg">
+          </div>
+          <button id="ba-btn" class="before-after__btn -btn-anim">
+            <div class="before-after__btn-icon">
+              <img src="images/icons/star-white.svg" alt="" draggable="false">
+            </div>
+          </button>
+          <div class="before-after__overlay" id="ba-overlay"></div>
+        </div>
+        <div class="promo-btns">
+          <button class="promo-btn active" data-ba-model="object">
+            Предметы
+          </button>
+          <button class="promo-btn " data-ba-model="person">
+            Модели
+          </button>
+        </div>
+      </div>
+			<!-- <div class="promo__nav">
+				<div class="promo__dots" data-dots="1">
+					<img src="images/promo/dots-1.jpg" alt="">
+				</div>
+				<div class="promo__dots active" data-dots="2">
+					<img src="images/promo/dots-2.jpg" alt="">
+				</div>
+			</div>
+			<div class="promo__content">
+				<div class="promo__box" data-dots-block="1">
+					<div class="promo__box-block">
+						<div class="promo__img active" data-img="1">
+							<picture>
+								<source srcset="images/promo/man-1.png" media="(min-width: 760px)" />
+								<img src="images/promo/man-1-mobile.png" alt="Logo" />
+							</picture>
+						</div>
+						<div class="promo__img" data-img="2">
+							<picture>
+								<source srcset="images/promo/man-2.png" media="(min-width: 760px)" />
+								<img src="images/promo/man-2-mobile.png" alt="Logo" />
+							</picture>
+						</div>
+					</div>
+					<div class="promo__card">
+						<div class="promo__card-star">
+							<img src="images/promo/star.svg" alt="">
+						</div>
+						<div class="promo__card-caption">Генерация<br> на модели или маникене</div>
+						<div class="promo__card-image">
+							<div class="promo__card-img active" data-img-card="1">
+								<picture>
+									<source srcset="images/promo/man-small-1.png" media="(min-width: 760px)" />
+									<img src="images/promo/man-small-1-mobile.png" alt="Logo" />
+								</picture>
+							</div>
+							<div class="promo__card-img" data-img-card="2">
+								<picture>
+									<source srcset="images/promo/man-small-2.png" media="(min-width: 760px)" />
+									<img src="images/promo/man-small-2-mobile.png" alt="Logo" />
+								</picture>
+							</div>
+						</div>
+						<div class="promo__card-arrow">
+							<img src="images/promo/arrow.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="promo__box active" data-dots-block="2">
+					<div class="promo__box-block">
+						<div class="promo__img active" data-img="1">
+							<picture>
+								<source srcset="images/promo/womman-1.png" media="(min-width: 760px)" />
+								<img src="images/promo/womman-1-mobile.png" alt="Logo" />
+							</picture>
+						</div>
+						<div class="promo__img" data-img="2">
+							<picture>
+								<source srcset="images/promo/womman-2.png" media="(min-width: 760px)" />
+								<img src="images/promo/womman-2-mobile.png" alt="Logo" />
+							</picture>
+						</div>
+					</div>
+					<div class="promo__card">
+						<div class="promo__card-star">
+							<img src="images/promo/star.svg" alt="">
+						</div>
+						<div class="promo__card-caption">Генерация<br> на модели или маникене</div>
+						<div class="promo__card-image">
+							<div class="promo__card-img active" data-img-card="1">
+								<picture>
+									<source srcset="images/promo/womman-small-1.png" media="(min-width: 760px)" />
+									<img src="images/promo/womman-small-1-mobile.png" alt="Logo" />
+								</picture>
+							</div>
+							<div class="promo__card-img" data-img-card="2">
+								<picture>
+									<source srcset="images/promo/womman-small-2.png" media="(min-width: 760px)" />
+									<img src="images/promo/womman-small-2-mobile.png" alt="Logo" />
+								</picture>
+							</div>
+						</div>
+						<div class="promo__card-arrow">
+							<img src="images/promo/arrow.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+		<div class="promo__mouse" >
+			<div class="promo__mouse-icon">
+				<picture>
+					<source srcset="images/promo/icon-mouse.svg" media="(min-width: 760px)" />
+					<img src="images/promo/icon-mouse-mobile.svg" alt="Logo" />
+				</picture>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="main-info" class="main-info">
+	<div class="wrapper">
+		<div class="main-info__wrap">
+			<div class="main-info__title fors">
+				Приложение Cocoon — технология на базе ИИ, создает реалистичные фотографии одежды без моделей и
+				фотографов. Просто загрузите фото одежды и нейросеть сгенерирует качественное изображение, помогая вам
+				быстро продемонстрировать товар на маркетплейсах и привлечь внимание к вашему бренду.
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="c-video">
+  <div class="c-video__wrap">
+    <iframe  src="https://www.youtube.com/embed/uUdBBQAvYnU?si=jTR1DyHcpPNX_HAb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="about">
+	<div class="wrapper">
+		<div class="about__body">
+			<div class="about__left">
+				<div class="caption">
+					<div class="caption__icon">
+						<img src="images/icons/star.svg" alt="">
+					</div>
+					<div class="caption__value">Генерация моделей</div>
+				</div>
+				<h2 class="about__title title">Все для<br> <span>качественного<br> контента</span>
+				</h2>
+				<div class="about__subtitle subtitle">Мы предоставляем сервис, который заточен под маркетплейсы, чтобы
+					дать продавцам все инструменты для создания карточек.</div>
+				<div class="about__tabs">
+					<div class="about__tab active" data-tab="1">Модели</div>
+					<div class="about__tab" data-tab="2">Фоны</div>
+					<div class="about__tab" data-tab="3">Точнность</div>
+				</div>
+			</div>
+			<div class="about__right">
+				<div class="about__block active" data-tab-block="1">
+					<div class="about-model">
+						<div class="about-model__left">
+							<div class="about-model__slick">
+								<div class="about-model__left-slide">
+									<div class="about-model__left-img">
+										<picture>
+											<source srcset="images/about/img-desctop-1.png"
+												media="(min-width: 760px)" />
+											<img src="images/about/img-mobile-1.png" alt="" />
+										</picture>
+									</div>
+									<div class="about-model__left-info">
+										<div class="about-model__left-caption fors">40+</div>
+										<div class="about-model__left-desc fors">Моделей</div>
+									</div>
+								</div>
+								<div class="about-model__left-slide">
+									<div class="about-model__left-img">
+										<picture>
+											<source srcset="images/about/img-desctop-2.png"
+												media="(min-width: 760px)" />
+											<img src="images/about/img-mobile-2.png" alt="" />
+										</picture>
+									</div>
+									<div class="about-model__left-info">
+										<div class="about-model__left-caption fors">40+</div>
+										<div class="about-model__left-desc fors">Моделей</div>
+									</div>
+								</div>
+								<div class="about-model__left-slide">
+									<div class="about-model__left-img">
+										<picture>
+											<source srcset="images/about/img-desctop-3.png"
+												media="(min-width: 760px)" />
+											<img src="images/about/img-mobile-3.png" alt="" />
+										</picture>
+									</div>
+									<div class="about-model__left-info">
+										<div class="about-model__left-caption fors">40+</div>
+										<div class="about-model__left-desc fors">Моделей</div>
+									</div>
+								</div>
+								<div class="about-model__left-slide">
+									<div class="about-model__left-img">
+										<picture>
+											<source srcset="images/about/img-desctop-4.png"
+												media="(min-width: 760px)" />
+											<img src="images/about/img-mobile-4.png" alt="" />
+										</picture>
+									</div>
+									<div class="about-model__left-info">
+										<div class="about-model__left-caption fors">40+</div>
+										<div class="about-model__left-desc fors">Моделей</div>
+									</div>
+								</div>
+							</div>
+							<div class="about-model__arrows">
+								<div class="arrow arrow_prew">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11.4957 5.5052C11.2224 5.23183 10.7792 5.23183 10.5058 5.5052L4.5058 11.5052C4.23243 11.7786 4.23243 12.2218 4.5058 12.4951L10.5058 18.4951C10.7792 18.7685 11.2224 18.7685 11.4957 18.4951C11.7691 18.2218 11.7691 17.7786 11.4957 17.5052L6.69072 12.7002L19.0008 12.7002C19.3874 12.7002 19.7008 12.3868 19.7008 12.0002C19.7008 11.6136 19.3874 11.3002 19.0008 11.3002L6.69072 11.3002L11.4957 6.49514C11.7691 6.22178 11.7691 5.77856 11.4957 5.5052Z"
+											fill="#7A87A3" />
+									</svg>
+								</div>
+								<div class="arrow arrow_next">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M12.505 18.495C12.7784 18.7684 13.2216 18.7684 13.495 18.495L19.495 12.495C19.7683 12.2216 19.7683 11.7784 19.495 11.505L13.495 5.50504C13.2216 5.23167 12.7784 5.23167 12.505 5.50504C12.2316 5.7784 12.2316 6.22162 12.505 6.49499L17.31 11.3L4.99999 11.3C4.61339 11.3 4.29999 11.6134 4.29999 12C4.29999 12.3866 4.61339 12.7 4.99999 12.7L17.31 12.7L12.505 17.505C12.2316 17.7784 12.2316 18.2216 12.505 18.495Z"
+											fill="#7A87A3" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="about-model__right">
+							<div class="about-model__top">
+								<div class="about-model__title">Персонализируйте карточки товаров</div>
+								<div class="about-model__top-desc">Создайте карточки товаров для любой аудитории
+									с помощью моделей, созданных искусственным интеллектом — мужчины, женщины, мальчика
+									или девочки. </div>
+							</div>
+							<div class="about-model__bottom">
+								<div class="about-model__small">
+									<div class="about-model__slide" data-model-slide="1">
+										<div class="about-model__card">
+											<div class="about-model__img">
+												<img src="images/about/img-desctop-small-1.png" alt="">
+											</div>
+											<div class="about-model__box">
+												<div class="about-model__name">Ольга, 22 года</div>
+												<div class="about-model__desc">Молодая брюнетка с карими глазами</div>
+											</div>
+										</div>
+									</div>
+									<div class="about-model__slide" data-model-slide="2">
+										<div class="about-model__card">
+											<div class="about-model__img">
+												<img src="images/about/img-desctop-small-2.png" alt="">
+											</div>
+											<div class="about-model__box">
+												<div class="about-model__name">Тимур, 25 лет</div>
+												<div class="about-model__desc">Молодой брюнетк с серыми глазами</div>
+											</div>
+										</div>
+									</div>
+									<div class="about-model__slide" data-model-slide="3">
+										<div class="about-model__card">
+											<div class="about-model__img">
+												<img src="images/about/img-desctop-small-3.png" alt="">
+											</div>
+											<div class="about-model__box">
+												<div class="about-model__name">Иван, 13 лет</div>
+												<div class="about-model__desc">Мальчик с каштановыми волосами и голубыми
+													глазами</div>
+											</div>
+										</div>
+									</div>
+									<div class="about-model__slide" data-model-slide="4">
+										<div class="about-model__card">
+											<div class="about-model__img">
+												<img src="images/about/img-desctop-small-4.png" alt="">
+											</div>
+											<div class="about-model__box">
+												<div class="about-model__name">Анна, 13 лет</div>
+												<div class="about-model__desc">Девочка с русыми волосами<br> и серыми
+													глазами</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="about-model__arrows">
+									<div class="arrow arrow_prew">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+											viewBox="0 0 24 24" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M11.4957 5.5052C11.2224 5.23183 10.7792 5.23183 10.5058 5.5052L4.5058 11.5052C4.23243 11.7786 4.23243 12.2218 4.5058 12.4951L10.5058 18.4951C10.7792 18.7685 11.2224 18.7685 11.4957 18.4951C11.7691 18.2218 11.7691 17.7786 11.4957 17.5052L6.69072 12.7002L19.0008 12.7002C19.3874 12.7002 19.7008 12.3868 19.7008 12.0002C19.7008 11.6136 19.3874 11.3002 19.0008 11.3002L6.69072 11.3002L11.4957 6.49514C11.7691 6.22178 11.7691 5.77856 11.4957 5.5052Z"
+												fill="#7A87A3" />
+										</svg>
+									</div>
+									<div class="arrow arrow_next">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+											viewBox="0 0 24 24" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M12.505 18.495C12.7784 18.7684 13.2216 18.7684 13.495 18.495L19.495 12.495C19.7683 12.2216 19.7683 11.7784 19.495 11.505L13.495 5.50504C13.2216 5.23167 12.7784 5.23167 12.505 5.50504C12.2316 5.7784 12.2316 6.22162 12.505 6.49499L17.31 11.3L4.99999 11.3C4.61339 11.3 4.29999 11.6134 4.29999 12C4.29999 12.3866 4.61339 12.7 4.99999 12.7L17.31 12.7L12.505 17.505C12.2316 17.7784 12.2316 18.2216 12.505 18.495Z"
+												fill="#7A87A3" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about__block" data-tab-block="2">
+					<div class="about-designer">
+						<div class="about-designer__block active" data-designer-block="1">
+							<div class="about-designer__left">
+								<div class="about-designer__bg">
+									<div class="about-designer__bg-block active" data-designer-img="0">
+										<picture>
+											<source srcset="images/about/block-2/bg.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="1">
+										<picture>
+											<source srcset="images/about/block-2/bg-1.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-1.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="2">
+										<picture>
+											<source srcset="images/about/block-2/bg-2.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-2.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="3">
+										<picture>
+											<source srcset="images/about/block-2/bg-3.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-3.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="4">
+										<picture>
+											<source srcset="images/about/block-2/bg-4.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-4.svg" alt="" />
+										</picture>
+									</div>
+								</div>
+								<div class="about-designer__img">
+									<picture>
+										<source srcset="images/about/block-2/box-1/img-bg.png"
+											media="(min-width: 760px)" />
+										<img src="images/about/block-2/box-1/img-bg-2.png" alt="" />
+									</picture>
+								</div>
+							</div>
+							<div class="about-designer__right">
+								<div class="about-designer__tabs">
+									<div class="about-designer__tab" data-designer="1">
+										<span class="about-designer__pink"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="2">
+										<span class="about-designer__yellow"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="3">
+										<span class="about-designer__light"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="4">
+										<span class="about-designer__white"></span>
+									</div>
+								</div>
+								<div class="about-designer__bottom">
+									<div class="about-designer__title">Дизайнерские варианты фона </div>
+									<div class="about-designer__subtitle">Выбирай любой универсальный фон<br> из
+										предложенных. Он подойдет ко всем товарам<br> и придаст карточке эстетичный вид,
+										не отвлекая от самого главного</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-designer__block" data-designer-block="2">
+							<div class="about-designer__left">
+								<div class="about-designer__bg">
+									<div class="about-designer__bg-block active" data-designer-img="0">
+										<picture>
+											<source srcset="images/about/block-2/bg.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="1">
+										<picture>
+											<source srcset="images/about/block-2/bg-1.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-1.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="2">
+										<picture>
+											<source srcset="images/about/block-2/bg-2.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-2.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="3">
+										<picture>
+											<source srcset="images/about/block-2/bg-3.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-3.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="4">
+										<picture>
+											<source srcset="images/about/block-2/bg-4.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-4.svg" alt="" />
+										</picture>
+									</div>
+								</div>
+								<div class="about-designer__img">
+									<picture>
+										<source srcset="images/about/block-2/box-2/img-bg.png"
+											media="(min-width: 760px)" />
+										<img src="images/about/block-2/box-2/img-bg-mobile.png" alt="" />
+									</picture>
+								</div>
+							</div>
+							<div class="about-designer__right">
+								<div class="about-designer__tabs">
+									<div class="about-designer__tab" data-designer="1">
+										<span class="about-designer__pink"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="2">
+										<span class="about-designer__yellow"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="3">
+										<span class="about-designer__light"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="4">
+										<span class="about-designer__white"></span>
+									</div>
+								</div>
+								<div class="about-designer__bottom">
+									<div class="about-designer__title">Дизайнерские варианты фона </div>
+									<div class="about-designer__subtitle">Выбирай любой универсальный фон<br> из
+										предложенных. Он подойдет ко всем товарам<br> и придаст карточке эстетичный вид,
+										не отвлекая от самого главного</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-designer__block" data-designer-block="3">
+							<div class="about-designer__left">
+								<div class="about-designer__bg">
+									<div class="about-designer__bg-block active" data-designer-img="0">
+										<picture>
+											<source srcset="images/about/block-2/bg.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="1">
+										<picture>
+											<source srcset="images/about/block-2/bg-1.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-1.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="2">
+										<picture>
+											<source srcset="images/about/block-2/bg-2.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-2.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="3">
+										<picture>
+											<source srcset="images/about/block-2/bg-3.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-3.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="4">
+										<picture>
+											<source srcset="images/about/block-2/bg-4.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-4.svg" alt="" />
+										</picture>
+									</div>
+								</div>
+								<div class="about-designer__img">
+									<picture>
+										<source srcset="images/about/block-2/box-3/img-bg.png"
+											media="(min-width: 760px)" />
+										<img src="images/about/block-2/box-3/img-bg-mobile.png" alt="" />
+									</picture>
+								</div>
+							</div>
+							<div class="about-designer__right">
+								<div class="about-designer__tabs">
+									<div class="about-designer__tab" data-designer="1">
+										<span class="about-designer__pink"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="2">
+										<span class="about-designer__yellow"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="3">
+										<span class="about-designer__light"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="4">
+										<span class="about-designer__white"></span>
+									</div>
+								</div>
+								<div class="about-designer__bottom">
+									<div class="about-designer__title">Дизайнерские варианты фона </div>
+									<div class="about-designer__subtitle">Выбирай любой универсальный фон<br> из
+										предложенных. Он подойдет ко всем товарам<br> и придаст карточке эстетичный вид,
+										не отвлекая от самого главного</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-designer__block" data-designer-block="4">
+							<div class="about-designer__left">
+								<div class="about-designer__bg">
+									<div class="about-designer__bg-block active" data-designer-img="0">
+										<picture>
+											<source srcset="images/about/block-2/bg.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="1">
+										<picture>
+											<source srcset="images/about/block-2/bg-1.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-1.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="2">
+										<picture>
+											<source srcset="images/about/block-2/bg-2.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-2.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="3">
+										<picture>
+											<source srcset="images/about/block-2/bg-3.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-3.svg" alt="" />
+										</picture>
+									</div>
+									<div class="about-designer__bg-block" data-designer-img="4">
+										<picture>
+											<source srcset="images/about/block-2/bg-4.svg" media="(min-width: 760px)" />
+											<img src="images/about/block-2/bg-mobile-4.svg" alt="" />
+										</picture>
+									</div>
+								</div>
+								<div class="about-designer__img">
+									<picture>
+										<source srcset="images/about/block-2/box-4/img-bg.png"
+											media="(min-width: 760px)" />
+										<img src="images/about/block-2/box-4/img-bg-mobile.png" alt="" />
+									</picture>
+								</div>
+							</div>
+							<div class="about-designer__right">
+								<div class="about-designer__tabs">
+									<div class="about-designer__tab" data-designer="1">
+										<span class="about-designer__pink"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="2">
+										<span class="about-designer__yellow"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="3">
+										<span class="about-designer__light"></span>
+									</div>
+									<div class="about-designer__tab" data-designer="4">
+										<span class="about-designer__white"></span>
+									</div>
+								</div>
+								<div class="about-designer__bottom">
+									<div class="about-designer__title">Дизайнерские варианты фона </div>
+									<div class="about-designer__subtitle">Выбирай любой универсальный фон<br> из
+										предложенных. Он подойдет ко всем товарам<br> и придаст карточке эстетичный вид,
+										не отвлекая от самого главного</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about__block" data-tab-block="3">
+					<div class="about-reliability">
+						<div class="about-reliability__block">
+							<div class="about-reliability__box active" data-reliability-box="1">
+								<div class="about-reliability__bg">
+									<div class="about-reliability__bg-block active" data-reliability-img="0">
+										<img src="images/about/block-3/bg.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="1">
+										<img src="images/about/block-3/bg-1.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="2">
+										<img src="images/about/block-3/bg-2.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="3">
+										<img src="images/about/block-3/bg-3.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="4">
+										<img src="images/about/block-3/bg-4.svg" alt="" />
+									</div>
+								</div>
+								<div class="about-reliability__ba">
+									<div class="ba is-moving is-mouseleave js-animation-play">
+										<img src="images/about/block-3/box-1/img-bg.png"
+											class="ba__image ba__image--full" alt="">
+										<div class="ba__resize">
+											<div class="ba__resize-img"
+												style="background-image: url(img/about/block-3/bg.svg);">
+												<img src="images/about/block-3/box-1/img-bg-1.png" class="ba__image"
+													alt="">
+											</div>
+										</div>
+										<div class="ba__handle">
+											<div class="ba__inner">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+													viewBox="0 0 32 32" fill="none">
+													<path
+														d="M25.1236 14.7863C26.2921 15.1735 26.2921 16.8265 25.1236 17.2137L19.792 18.9805C19.4085 19.1076 19.1076 19.4085 18.9805 19.792L17.2137 25.1236C16.8265 26.2921 15.1735 26.2921 14.7863 25.1236L13.0195 19.792C12.8924 19.4085 12.5915 19.1076 12.208 18.9805L6.87641 17.2137C5.70787 16.8265 5.70786 15.1735 6.87641 14.7863L12.208 13.0195C12.5915 12.8924 12.8924 12.5915 13.0195 12.208L14.7863 6.87641C15.1735 5.70786 16.8265 5.70786 17.2137 6.87641L18.9805 12.208C19.1076 12.5915 19.4085 12.8924 19.792 13.0195L25.1236 14.7863Z"
+														fill="white" />
+													<path opacity="0.2"
+														d="M23.1332 7.30719C23.2941 6.8976 23.8717 6.8976 24.0326 7.30719L24.1895 7.70654C24.2387 7.83158 24.3373 7.93057 24.4619 7.97989L24.8598 8.13739C25.2678 8.29893 25.2678 8.87859 24.8598 9.04013L24.4619 9.19763C24.3373 9.24695 24.2387 9.34593 24.1895 9.47098L24.0326 9.87033C23.8717 10.2799 23.2941 10.2799 23.1332 9.87033L22.9763 9.47098C22.9271 9.34593 22.8285 9.24695 22.7039 9.19763L22.3061 9.04013C21.898 8.87859 21.898 8.29893 22.3061 8.13739L22.7039 7.97989C22.8285 7.93057 22.9271 7.83158 22.9763 7.70654L23.1332 7.30719Z"
+														fill="white" />
+													<path opacity="0.7"
+														d="M8.10003 21.3072C8.26098 20.8976 8.83851 20.8976 8.99945 21.3072L9.42983 22.4025C9.47897 22.5275 9.57759 22.6265 9.70218 22.6758L10.7934 23.1078C11.2015 23.2693 11.2015 23.849 10.7934 24.0105L9.70218 24.4425C9.57759 24.4918 9.47897 24.5908 9.42983 24.7159L8.99945 25.8112C8.83851 26.2207 8.26098 26.2207 8.10003 25.8112L7.66965 24.7159C7.62051 24.5908 7.52189 24.4918 7.39731 24.4425L6.30606 24.0105C5.89798 23.849 5.89798 23.2693 6.30606 23.1078L7.39731 22.6758C7.52189 22.6265 7.62051 22.5275 7.66965 22.4025L8.10003 21.3072Z"
+														fill="white" />
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="about-reliability__box" data-reliability-box="2">
+								<div class="about-reliability__bg">
+									<div class="about-reliability__bg-block active" data-reliability-img="0">
+										<img src="images/about/block-3/bg.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="1">
+										<img src="images/about/block-3/bg-1.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="2">
+										<img src="images/about/block-3/bg-2.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="3">
+										<img src="images/about/block-3/bg-3.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="4">
+										<img src="images/about/block-3/bg-4.svg" alt="" />
+									</div>
+								</div>
+								<div class="about-reliability__ba">
+									<div class="ba is-moving is-mouseleave js-animation-play">
+										<img src="images/about/block-3/box-2/img-bg.png"
+											class="ba__image ba__image--full" alt="">
+										<div class="ba__resize">
+											<div class="ba__resize-img"
+												style="background-image: url(img/about/block-3/bg.svg);">
+												<img src="images/about/block-3/box-2/img-bg-1.png" class="ba__image"
+													alt="">
+											</div>
+										</div>
+										<div class="ba__handle">
+											<div class="ba__inner">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+													viewBox="0 0 32 32" fill="none">
+													<path
+														d="M25.1236 14.7863C26.2921 15.1735 26.2921 16.8265 25.1236 17.2137L19.792 18.9805C19.4085 19.1076 19.1076 19.4085 18.9805 19.792L17.2137 25.1236C16.8265 26.2921 15.1735 26.2921 14.7863 25.1236L13.0195 19.792C12.8924 19.4085 12.5915 19.1076 12.208 18.9805L6.87641 17.2137C5.70787 16.8265 5.70786 15.1735 6.87641 14.7863L12.208 13.0195C12.5915 12.8924 12.8924 12.5915 13.0195 12.208L14.7863 6.87641C15.1735 5.70786 16.8265 5.70786 17.2137 6.87641L18.9805 12.208C19.1076 12.5915 19.4085 12.8924 19.792 13.0195L25.1236 14.7863Z"
+														fill="white" />
+													<path opacity="0.2"
+														d="M23.1332 7.30719C23.2941 6.8976 23.8717 6.8976 24.0326 7.30719L24.1895 7.70654C24.2387 7.83158 24.3373 7.93057 24.4619 7.97989L24.8598 8.13739C25.2678 8.29893 25.2678 8.87859 24.8598 9.04013L24.4619 9.19763C24.3373 9.24695 24.2387 9.34593 24.1895 9.47098L24.0326 9.87033C23.8717 10.2799 23.2941 10.2799 23.1332 9.87033L22.9763 9.47098C22.9271 9.34593 22.8285 9.24695 22.7039 9.19763L22.3061 9.04013C21.898 8.87859 21.898 8.29893 22.3061 8.13739L22.7039 7.97989C22.8285 7.93057 22.9271 7.83158 22.9763 7.70654L23.1332 7.30719Z"
+														fill="white" />
+													<path opacity="0.7"
+														d="M8.10003 21.3072C8.26098 20.8976 8.83851 20.8976 8.99945 21.3072L9.42983 22.4025C9.47897 22.5275 9.57759 22.6265 9.70218 22.6758L10.7934 23.1078C11.2015 23.2693 11.2015 23.849 10.7934 24.0105L9.70218 24.4425C9.57759 24.4918 9.47897 24.5908 9.42983 24.7159L8.99945 25.8112C8.83851 26.2207 8.26098 26.2207 8.10003 25.8112L7.66965 24.7159C7.62051 24.5908 7.52189 24.4918 7.39731 24.4425L6.30606 24.0105C5.89798 23.849 5.89798 23.2693 6.30606 23.1078L7.39731 22.6758C7.52189 22.6265 7.62051 22.5275 7.66965 22.4025L8.10003 21.3072Z"
+														fill="white" />
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="about-reliability__box" data-reliability-box="3">
+								<div class="about-reliability__bg">
+									<div class="about-reliability__bg-block active" data-reliability-img="0">
+										<img src="images/about/block-3/bg.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="1">
+										<img src="images/about/block-3/bg-1.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="2">
+										<img src="images/about/block-3/bg-2.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="3">
+										<img src="images/about/block-3/bg-3.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="4">
+										<img src="images/about/block-3/bg-4.svg" alt="" />
+									</div>
+								</div>
+								<div class="about-reliability__ba">
+									<div class="ba is-moving is-mouseleave js-animation-play">
+										<img src="images/about/block-3/box-3/img-bg.png"
+											class="ba__image ba__image--full" alt="">
+										<div class="ba__resize">
+											<div class="ba__resize-img"
+												style="background-image: url(img/about/block-3/bg.svg);">
+												<img src="images/about/block-3/box-3/img-bg-1.png" class="ba__image"
+													alt="">
+											</div>
+										</div>
+										<div class="ba__handle">
+											<div class="ba__inner">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+													viewBox="0 0 32 32" fill="none">
+													<path
+														d="M25.1236 14.7863C26.2921 15.1735 26.2921 16.8265 25.1236 17.2137L19.792 18.9805C19.4085 19.1076 19.1076 19.4085 18.9805 19.792L17.2137 25.1236C16.8265 26.2921 15.1735 26.2921 14.7863 25.1236L13.0195 19.792C12.8924 19.4085 12.5915 19.1076 12.208 18.9805L6.87641 17.2137C5.70787 16.8265 5.70786 15.1735 6.87641 14.7863L12.208 13.0195C12.5915 12.8924 12.8924 12.5915 13.0195 12.208L14.7863 6.87641C15.1735 5.70786 16.8265 5.70786 17.2137 6.87641L18.9805 12.208C19.1076 12.5915 19.4085 12.8924 19.792 13.0195L25.1236 14.7863Z"
+														fill="white" />
+													<path opacity="0.2"
+														d="M23.1332 7.30719C23.2941 6.8976 23.8717 6.8976 24.0326 7.30719L24.1895 7.70654C24.2387 7.83158 24.3373 7.93057 24.4619 7.97989L24.8598 8.13739C25.2678 8.29893 25.2678 8.87859 24.8598 9.04013L24.4619 9.19763C24.3373 9.24695 24.2387 9.34593 24.1895 9.47098L24.0326 9.87033C23.8717 10.2799 23.2941 10.2799 23.1332 9.87033L22.9763 9.47098C22.9271 9.34593 22.8285 9.24695 22.7039 9.19763L22.3061 9.04013C21.898 8.87859 21.898 8.29893 22.3061 8.13739L22.7039 7.97989C22.8285 7.93057 22.9271 7.83158 22.9763 7.70654L23.1332 7.30719Z"
+														fill="white" />
+													<path opacity="0.7"
+														d="M8.10003 21.3072C8.26098 20.8976 8.83851 20.8976 8.99945 21.3072L9.42983 22.4025C9.47897 22.5275 9.57759 22.6265 9.70218 22.6758L10.7934 23.1078C11.2015 23.2693 11.2015 23.849 10.7934 24.0105L9.70218 24.4425C9.57759 24.4918 9.47897 24.5908 9.42983 24.7159L8.99945 25.8112C8.83851 26.2207 8.26098 26.2207 8.10003 25.8112L7.66965 24.7159C7.62051 24.5908 7.52189 24.4918 7.39731 24.4425L6.30606 24.0105C5.89798 23.849 5.89798 23.2693 6.30606 23.1078L7.39731 22.6758C7.52189 22.6265 7.62051 22.5275 7.66965 22.4025L8.10003 21.3072Z"
+														fill="white" />
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="about-reliability__box" data-reliability-box="4">
+								<div class="about-reliability__bg">
+									<div class="about-reliability__bg-block active" data-reliability-img="0">
+										<img src="images/about/block-3/bg.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="1">
+										<img src="images/about/block-3/bg-1.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="2">
+										<img src="images/about/block-3/bg-2.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="3">
+										<img src="images/about/block-3/bg-3.svg" alt="" />
+									</div>
+									<div class="about-reliability__bg-block" data-reliability-img="4">
+										<img src="images/about/block-3/bg-4.svg" alt="" />
+									</div>
+								</div>
+								<div class="about-reliability__ba">
+									<div class="ba is-moving is-mouseleave js-animation-play">
+										<img src="images/about/block-3/box-4/img-bg.png"
+											class="ba__image ba__image--full" alt="">
+										<div class="ba__resize">
+											<div class="ba__resize-img"
+												style="background-image: url(img/about/block-3/bg.svg);">
+												<img src="images/about/block-3/box-4/img-bg-1.png" class="ba__image"
+													alt="">
+											</div>
+										</div>
+										<div class="ba__handle">
+											<div class="ba__inner">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+													viewBox="0 0 32 32" fill="none">
+													<path
+														d="M25.1236 14.7863C26.2921 15.1735 26.2921 16.8265 25.1236 17.2137L19.792 18.9805C19.4085 19.1076 19.1076 19.4085 18.9805 19.792L17.2137 25.1236C16.8265 26.2921 15.1735 26.2921 14.7863 25.1236L13.0195 19.792C12.8924 19.4085 12.5915 19.1076 12.208 18.9805L6.87641 17.2137C5.70787 16.8265 5.70786 15.1735 6.87641 14.7863L12.208 13.0195C12.5915 12.8924 12.8924 12.5915 13.0195 12.208L14.7863 6.87641C15.1735 5.70786 16.8265 5.70786 17.2137 6.87641L18.9805 12.208C19.1076 12.5915 19.4085 12.8924 19.792 13.0195L25.1236 14.7863Z"
+														fill="white" />
+													<path opacity="0.2"
+														d="M23.1332 7.30719C23.2941 6.8976 23.8717 6.8976 24.0326 7.30719L24.1895 7.70654C24.2387 7.83158 24.3373 7.93057 24.4619 7.97989L24.8598 8.13739C25.2678 8.29893 25.2678 8.87859 24.8598 9.04013L24.4619 9.19763C24.3373 9.24695 24.2387 9.34593 24.1895 9.47098L24.0326 9.87033C23.8717 10.2799 23.2941 10.2799 23.1332 9.87033L22.9763 9.47098C22.9271 9.34593 22.8285 9.24695 22.7039 9.19763L22.3061 9.04013C21.898 8.87859 21.898 8.29893 22.3061 8.13739L22.7039 7.97989C22.8285 7.93057 22.9271 7.83158 22.9763 7.70654L23.1332 7.30719Z"
+														fill="white" />
+													<path opacity="0.7"
+														d="M8.10003 21.3072C8.26098 20.8976 8.83851 20.8976 8.99945 21.3072L9.42983 22.4025C9.47897 22.5275 9.57759 22.6265 9.70218 22.6758L10.7934 23.1078C11.2015 23.2693 11.2015 23.849 10.7934 24.0105L9.70218 24.4425C9.57759 24.4918 9.47897 24.5908 9.42983 24.7159L8.99945 25.8112C8.83851 26.2207 8.26098 26.2207 8.10003 25.8112L7.66965 24.7159C7.62051 24.5908 7.52189 24.4918 7.39731 24.4425L6.30606 24.0105C5.89798 23.849 5.89798 23.2693 6.30606 23.1078L7.39731 22.6758C7.52189 22.6265 7.62051 22.5275 7.66965 22.4025L8.10003 21.3072Z"
+														fill="white" />
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-reliability__info">
+							<div class="about-reliability__info-box">
+								<div class="about-reliability__title">Полная<br> реалистичность</div>
+								<div class="about-reliability__subtitle">Фотография одежды после генерации на наших
+									искусственных интеллектуальных моделях будет идентичной исходному товару. Вы
+									получаете на фото ту же реальную одежду, только на наших ИИ моделях.</div>
+								<button class="about-reliability__btn btn btn_white">Попробовать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="future" class="future">
+	<div class="wrapper wrapper_big">
+		<div class="future__top">
+			<div class="future__top-box">
+				<div class="caption">
+					<div class="caption__icon">
+						<img src="images/icons/star.svg" alt="">
+					</div>
+					<div class="caption__value">Генерация окружения</div>
+				</div>
+				<h2 class="future__title title">
+          Генерация  <br>
+          фона для <br>
+					<span>предметов </span>
+				</h2>
+        <button class="future__top-btn">
+          Попробовать бесплатно
+        </button>
+			</div>
+		</div>
+		<div class="future__wrap">
+			<div class="future__left">
+				<div class="future__link">
+					<div class="future__link-icon">
+						<img src="images/icons/t.svg" alt="">
+					</div>
+					<div class="future__link-box">
+						<div class="future__link-caption fors">Создание своих промптов</div>
+						<div class="future__link-desc">Индивидуальный подход</div>
+					</div>
+				</div>
+				<div class="future__items">
+          <div class="future__item">
+            <div class="future__item-title">
+              Описание фона
+            </div>
+            <div class="future__item-box">
+              <div class="future__item-text" id="text-wrap">
+
+              </div>
+            </div>
+          </div>
+          <div class="future__item">
+            <div class="future__item-title">
+              Исключения
+            </div>
+            <div class="future__item-box">
+              <div class="future__item-text" id="text-wrap-scnd">
+
+              </div>
+            </div>
+          </div>
+				</div>
+			</div>
+			<div class="future__center">
+				<div class="future__containner">
+					<div class="future__containner-img">
+						<div class="future__img">
+							<div class="ba is-moving is-mouseleave js-animation-play">
+								<img src="images/future/img-1.png" class="ba__image ba__image--full" alt="">
+								<div class="ba__resize">
+									<img src="images/future/img-2.png" class="ba__image" alt="">
+								</div>
+								<div class="ba__handle">
+									<div class="ba__inner">
+										<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+											viewBox="0 0 32 32" fill="none">
+											<path
+												d="M25.1236 14.7863C26.2921 15.1735 26.2921 16.8265 25.1236 17.2137L19.792 18.9805C19.4085 19.1076 19.1076 19.4085 18.9805 19.792L17.2137 25.1236C16.8265 26.2921 15.1735 26.2921 14.7863 25.1236L13.0195 19.792C12.8924 19.4085 12.5915 19.1076 12.208 18.9805L6.87641 17.2137C5.70787 16.8265 5.70786 15.1735 6.87641 14.7863L12.208 13.0195C12.5915 12.8924 12.8924 12.5915 13.0195 12.208L14.7863 6.87641C15.1735 5.70786 16.8265 5.70786 17.2137 6.87641L18.9805 12.208C19.1076 12.5915 19.4085 12.8924 19.792 13.0195L25.1236 14.7863Z"
+												fill="white" />
+											<path opacity="0.2"
+												d="M23.1332 7.30719C23.2941 6.8976 23.8717 6.8976 24.0326 7.30719L24.1895 7.70654C24.2387 7.83158 24.3373 7.93057 24.4619 7.97989L24.8598 8.13739C25.2678 8.29893 25.2678 8.87859 24.8598 9.04013L24.4619 9.19763C24.3373 9.24695 24.2387 9.34593 24.1895 9.47098L24.0326 9.87033C23.8717 10.2799 23.2941 10.2799 23.1332 9.87033L22.9763 9.47098C22.9271 9.34593 22.8285 9.24695 22.7039 9.19763L22.3061 9.04013C21.898 8.87859 21.898 8.29893 22.3061 8.13739L22.7039 7.97989C22.8285 7.93057 22.9271 7.83158 22.9763 7.70654L23.1332 7.30719Z"
+												fill="white" />
+											<path opacity="0.7"
+												d="M8.10003 21.3072C8.26098 20.8976 8.83851 20.8976 8.99945 21.3072L9.42983 22.4025C9.47897 22.5275 9.57759 22.6265 9.70218 22.6758L10.7934 23.1078C11.2015 23.2693 11.2015 23.849 10.7934 24.0105L9.70218 24.4425C9.57759 24.4918 9.47897 24.5908 9.42983 24.7159L8.99945 25.8112C8.83851 26.2207 8.26098 26.2207 8.10003 25.8112L7.66965 24.7159C7.62051 24.5908 7.52189 24.4918 7.39731 24.4425L6.30606 24.0105C5.89798 23.849 5.89798 23.2693 6.30606 23.1078L7.39731 22.6758C7.52189 22.6265 7.62051 22.5275 7.66965 22.4025L8.10003 21.3072Z"
+												fill="white" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="future__box">
+						<div class="caption caption_small">
+							<div class="caption__icon">
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="caption__value">Генерация для предметов</div>
+						</div>
+						<div class="future__box-title title title_small">Создание отличных фото товаров</div>
+						<div class="future__box-desc subtitle">Выберите фон или окружение для предмета. Мы разработали большое количество локаций, которые помогут продемонстрировать товар. </div>
+					</div>
+				</div>
+				<div class="future__info">
+					<div class="future__info-title">15+</div>
+					<div class="future__info-desc subtitle">Заготовленных типов
+            окружения для генерации</div>
+				</div>
+			</div>
+			<div class="future__right">
+				<div class="future-templates">
+					<div class="caption caption_small">
+						<div class="caption__icon">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="caption__value">Шаблоны</div>
+					</div>
+					<div class="future-templates__title title title_small">Разнообразные фоны
+          </div>
+					<div class="future-templates__img">
+						<img src="images/future/templates-img.png" alt="">
+					</div>
+				</div>
+				<div class="future__link">
+					<div class="future__link-icon">
+						<img src="images/future/icon-2.svg" alt="">
+					</div>
+					<div class="future__link-box">
+						<div class="future__link-caption fors">Реалистичные результаты</div>
+						<div class="future__link-desc">Объект остается неизменным</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="steps" class="steps">
+	<div class="wrapper steps__body">
+		<div class="steps__wrap active" data-step="1">
+			<div class="steps__left">
+				<div class="caption">
+					<div class="caption__icon">
+						<img src="images/icons/star.svg" alt="">
+					</div>
+					<div class="caption__value">Шаг 1</div>
+				</div>
+				<h2 class="steps__title title">
+					<span>Загрузите </span>фотографии
+				</h2>
+				<div class="steps__subtitle subtitle">Подойдет даже фото, сделанное на смартфоне. Добавляйте фотографии
+					в разных ракурсах, чтобы продемонстрировать товар </div>
+				<div class="steps__buttons">
+					<button class="steps__btn btn step--js" data-next-step="2">Далее</button>
+				</div>
+			</div>
+			<div class="steps__right">
+				<div class="steps__video">
+					<video class="video" pip="false" autoplay muted loop="" preload="metadata" playsinline=""
+						webkit-playsinline="" poster="">
+						<source src="images/steps/video-1.webm" type="video/webm">
+						<source src="images/steps/video-1.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="steps__buttons">
+					<button class="steps__btn btn step--js" data-next-step="2">Далее</button>
+				</div>
+			</div>
+		</div>
+		<div class="steps__wrap" data-step="2">
+			<div class="steps__left">
+				<div class="caption">
+					<div class="caption__icon">
+						<img src="images/icons/star.svg" alt="">
+					</div>
+					<div class="caption__value">Шаг 2</div>
+				</div>
+				<h2 class="steps__title title">
+					Выберите <span>модель </span>
+				</h2>
+				<div class="steps__subtitle subtitle">Вы можете использовать разных
+					моделей для генерации на одной
+					и той же фотографии. </div>
+				<div class="steps__buttons">
+					<button class="steps__btn btn btn_item step--js" data-next-step="1">Назад</button>
+					<button class="steps__btn btn step--js" data-next-step="3">Далее</button>
+				</div>
+			</div>
+			<div class="steps__right">
+				<div class="steps-model">
+					<div class="steps-model__card">
+						<img src="images/steps/model-1.png" alt="">
+					</div>
+					<div class="steps-model__card active">
+						<img src="images/steps/model-2.png" alt="">
+					</div>
+					<div class="steps-model__card">
+						<img src="images/steps/model-3.png" alt="">
+					</div>
+				</div>
+				<div class="steps__buttons">
+					<button class="steps__btn btn btn_item step--js" data-next-step="1">Назад</button>
+					<button class="steps__btn btn step--js" data-next-step="3">Далее</button>
+				</div>
+			</div>
+		</div>
+		<div class="steps__wrap steps__wrap_center" data-step="3">
+			<div class="steps__left">
+				<div class="caption">
+					<div class="caption__icon">
+						<img src="images/icons/star.svg" alt="">
+					</div>
+					<div class="caption__value">Шаг 3</div>
+				</div>
+				<h2 class="steps__title title">
+					<span>Выберите фон </span>для карточки
+				</h2>
+				<div class="steps__subtitle subtitle">Нейтральный фон поможет выделить одежду<br> и сделает карточку
+					эстетичней</div>
+				<div class="steps__buttons">
+					<button class="steps__btn btn btn_item step--js" data-next-step="2">Назад</button>
+					<button class="steps__btn btn step--js" data-next-step="4">Далее</button>
+				</div>
+			</div>
+			<div class="steps__right">
+				<div class="steps-bg">
+					<div class="steps-bg__dots">
+						<div class="steps-bg__color steps-bg__color_1"></div>
+					</div>
+					<div class="steps-bg__dots">
+						<div class="steps-bg__color steps-bg__color_2"></div>
+					</div>
+					<div class="steps-bg__dots active">
+						<div class="steps-bg__color steps-bg__color_3"></div>
+					</div>
+					<div class="steps-bg__dots">
+						<div class="steps-bg__color steps-bg__color_4"></div>
+					</div>
+					<div class="steps-bg__dots">
+						<div class="steps-bg__color steps-bg__color_5"></div>
+					</div>
+				</div>
+				<div class="steps__buttons">
+					<button class="steps__btn btn btn_item step--js" data-next-step="2">Назад</button>
+					<button class="steps__btn btn step--js" data-next-step="4">Далее</button>
+				</div>
+			</div>
+		</div>
+		<div class="steps__wrap" data-step="4">
+			<div class="steps__left">
+				<div class="caption">
+					<div class="caption__icon">
+						<img src="images/icons/star.svg" alt="">
+					</div>
+					<div class="caption__value">Шаг 4</div>
+				</div>
+				<h2 class="steps__title title">
+					И наблюдайте <span>магию</span>
+				</h2>
+				<div class="steps__subtitle subtitle">Сохраняйте полученные фотографии<br> и размещаейте их на
+					маркетплейсах</div>
+				<div class="steps__buttons">
+					<button class="steps__btn btn btn_item step--js" data-next-step="3">Назад</button>
+				</div>
+			</div>
+			<div class="steps__right">
+				<div class="steps__video-finish">
+					<video class="video" pip="false" autoplay muted loop="" preload="metadata" playsinline=""
+						webkit-playsinline="" poster="">
+						<source src="images/steps/video-2.webm" type="video/webm">
+						<source src="images/steps/video-2.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="steps__buttons">
+					<button class="steps__btn btn btn_item step--js" data-next-step="3">Назад</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="application">
+	<div class="wrapper">
+		<div class="application__wrap">
+			<div class="application__left">
+				<div class="caption">
+					<div class="caption__icon">
+						<img src="images/icons/star.svg" alt="">
+					</div>
+					<div class="caption__value">Мобильное приложение</div>
+				</div>
+				<h2 class="application__title title">
+					Скачайте <span>приложение</span>
+				</h2>
+				<div class="application__subtitle subtitle">
+					<span>Попробуйте также мобильное приложение, чтобы создавать карточки товаров находу. </span>
+					<span>Или воспользуйтесь веб версией сайта. Откройте<br> <a href="#">coc-on.ru</a> в вашем веб
+						браузере.</span>
+				</div>
+				<div class="application__nav">
+					<a href="#" class="application__link">
+						<img src="images/application/appstore.svg" alt="">
+					</a>
+					<a href="#" class="application__link">
+						<img src="images/application/googleplay.svg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="application__right">
+				<div class="application__right-body">
+					<div class="application__bg">
+						<img src="images/application/bg.svg" alt="">
+					</div>
+					<div class="application__images">
+						<a href="images/application/img-1.png" class="application__img application__img_1"
+							data-fancybox="application" data-fancybox-close="true">
+							<img src="images/application/img-1.png" alt="">
+						</a>
+						<a href="images/application/img-2.png" class="application__img application__img_2"
+							data-fancybox="application" data-fancybox-close="true">
+							<img src="images/application/img-2.png" alt="">
+						</a>
+						<a href="images/application/img-3.png" class="application__img application__img_3"
+							data-fancybox="application" data-fancybox-close="true">
+							<img src="images/application/img-3.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="application__nav">
+					<a href="#" class="application__link">
+						<img src="images/application/appstore.svg" alt="">
+					</a>
+					<a href="#" class="application__link">
+						<img src="images/application/googleplay.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="marketplaces">
+<div class="wrapper">
+  <div class="marketplaces__wrap">
+    <div class="marketplaces__top">
+      <div class="marketplaces__title">
+        Маркетплейсы
+      </div>
+      <div class="marketplaces__subtitle">
+        Наши карточки можно найти на самых популярных маркетплейсах
+      </div>
+    </div>
+    <div class="marketplaces__items">
+      <div class="marketplaces__item">
+        <div class="marketplaces__item-logo">
+          <div class="marketplaces__item-icon">
+            <img src="images/marketplaces/ozon.svg" alt="">
+            <img src="images/marketplaces/ozon-2.svg" alt="">
+          </div>
+        </div>
+        <div class="marketplaces__item-content">
+          <div class="marketplaces__item-title">
+            OZON
+          </div>
+          <div class="marketplaces__item-text">
+            маркетплейс
+          </div>
+        </div>
+      </div>
+      <div class="marketplaces__item">
+        <div class="marketplaces__item-logo">
+          <img src="images/marketplaces/wb.svg" alt="">
+          <img src="images/marketplaces/wb-2.svg" alt="">
+        </div>
+        <div class="marketplaces__item-content">
+          <div class="marketplaces__item-title">
+            Wildberies
+          </div>
+          <div class="marketplaces__item-text">
+            маркетплейс
+          </div>
+        </div>
+      </div>
+      <div class="marketplaces__item">
+        <div class="marketplaces__item-logo">
+          <img src="images/marketplaces/y.svg" alt="">
+          <img src="images/marketplaces/y-2.svg" alt="">
+        </div>
+        <div class="marketplaces__item-content">
+          <div class="marketplaces__item-title">
+            Yandex market
+          </div>
+          <div class="marketplaces__item-text">
+            маркетплейс
+          </div>
+        </div>
+      </div>
+      <div class="marketplaces__item">
+        <div class="marketplaces__item-logo">
+          <img src="images/marketplaces/la.svg" alt="">
+          <img src="images/marketplaces/la-2.svg" alt="">
+        </div>
+        <div class="marketplaces__item-content">
+          <div class="marketplaces__item-title">
+            Lamoda
+          </div>
+          <div class="marketplaces__item-text">
+            маркетплейс
+          </div>
+        </div>
+      </div>
+      <div class="marketplaces__item">
+        <div class="marketplaces__item-logo">
+          <img src="images/marketplaces/f.svg" alt="">
+          <img src="images/marketplaces/f-2.svg" alt="">
+        </div>
+        <div class="marketplaces__item-content">
+          <div class="marketplaces__item-title">
+            Farfetch
+          </div>
+          <div class="marketplaces__item-text">
+            маркетплейс
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="treadmill" id="c-treadmill">
+  <div class="treadmill__overlay" id="treadmill-overlay"></div>
+  <div class="treadmill__wrap"  >
+
+    <div class="treadmill__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.72394 13.8951C8.48138 11.0313 12.9799 9.12835 15.2388 8.20515C21.668 5.58626 23.0195 5.13408 23.8883 5.11523C24.0814 5.11523 24.5061 5.15292 24.7957 5.37901C25.0274 5.56742 25.0854 5.81235 25.124 6.00076C25.1626 6.18917 25.2012 6.58483 25.1626 6.88628C24.8151 10.4661 23.3091 19.1517 22.5368 23.146C22.2086 24.8417 21.5715 25.4069 20.9537 25.4634C19.6022 25.5765 18.5789 24.5967 17.2853 23.7677C15.2388 22.4677 14.0997 21.6576 12.1111 20.3764C9.81355 18.9068 11.3002 18.0966 12.6131 16.7778C12.9606 16.4386 18.8878 11.1632 19.0037 10.6921C19.023 10.6356 19.023 10.4095 18.8878 10.2965C18.7527 10.1834 18.5596 10.2211 18.4051 10.2588C18.1928 10.2965 14.9492 12.4067 8.63583 16.5705C7.7091 17.1923 6.8789 17.4937 6.12593 17.4749C5.29573 17.456 3.71256 17.0227 2.51553 16.6459C1.06751 16.1937 -0.0909093 15.9488 0.00562549 15.1574C0.0635463 14.7429 0.642754 14.3284 1.72394 13.8951Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="treadmill__text">
+      Наш Telegram канал
+    </div>
+    <div class="treadmill__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.72394 13.8951C8.48138 11.0313 12.9799 9.12835 15.2388 8.20515C21.668 5.58626 23.0195 5.13408 23.8883 5.11523C24.0814 5.11523 24.5061 5.15292 24.7957 5.37901C25.0274 5.56742 25.0854 5.81235 25.124 6.00076C25.1626 6.18917 25.2012 6.58483 25.1626 6.88628C24.8151 10.4661 23.3091 19.1517 22.5368 23.146C22.2086 24.8417 21.5715 25.4069 20.9537 25.4634C19.6022 25.5765 18.5789 24.5967 17.2853 23.7677C15.2388 22.4677 14.0997 21.6576 12.1111 20.3764C9.81355 18.9068 11.3002 18.0966 12.6131 16.7778C12.9606 16.4386 18.8878 11.1632 19.0037 10.6921C19.023 10.6356 19.023 10.4095 18.8878 10.2965C18.7527 10.1834 18.5596 10.2211 18.4051 10.2588C18.1928 10.2965 14.9492 12.4067 8.63583 16.5705C7.7091 17.1923 6.8789 17.4937 6.12593 17.4749C5.29573 17.456 3.71256 17.0227 2.51553 16.6459C1.06751 16.1937 -0.0909093 15.9488 0.00562549 15.1574C0.0635463 14.7429 0.642754 14.3284 1.72394 13.8951Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="treadmill__text">
+      Наш Telegram канал
+    </div>
+    <div class="treadmill__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.72394 13.8951C8.48138 11.0313 12.9799 9.12835 15.2388 8.20515C21.668 5.58626 23.0195 5.13408 23.8883 5.11523C24.0814 5.11523 24.5061 5.15292 24.7957 5.37901C25.0274 5.56742 25.0854 5.81235 25.124 6.00076C25.1626 6.18917 25.2012 6.58483 25.1626 6.88628C24.8151 10.4661 23.3091 19.1517 22.5368 23.146C22.2086 24.8417 21.5715 25.4069 20.9537 25.4634C19.6022 25.5765 18.5789 24.5967 17.2853 23.7677C15.2388 22.4677 14.0997 21.6576 12.1111 20.3764C9.81355 18.9068 11.3002 18.0966 12.6131 16.7778C12.9606 16.4386 18.8878 11.1632 19.0037 10.6921C19.023 10.6356 19.023 10.4095 18.8878 10.2965C18.7527 10.1834 18.5596 10.2211 18.4051 10.2588C18.1928 10.2965 14.9492 12.4067 8.63583 16.5705C7.7091 17.1923 6.8789 17.4937 6.12593 17.4749C5.29573 17.456 3.71256 17.0227 2.51553 16.6459C1.06751 16.1937 -0.0909093 15.9488 0.00562549 15.1574C0.0635463 14.7429 0.642754 14.3284 1.72394 13.8951Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="treadmill__text">
+      Наш Telegram канал
+    </div>
+    <div class="treadmill__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.72394 13.8951C8.48138 11.0313 12.9799 9.12835 15.2388 8.20515C21.668 5.58626 23.0195 5.13408 23.8883 5.11523C24.0814 5.11523 24.5061 5.15292 24.7957 5.37901C25.0274 5.56742 25.0854 5.81235 25.124 6.00076C25.1626 6.18917 25.2012 6.58483 25.1626 6.88628C24.8151 10.4661 23.3091 19.1517 22.5368 23.146C22.2086 24.8417 21.5715 25.4069 20.9537 25.4634C19.6022 25.5765 18.5789 24.5967 17.2853 23.7677C15.2388 22.4677 14.0997 21.6576 12.1111 20.3764C9.81355 18.9068 11.3002 18.0966 12.6131 16.7778C12.9606 16.4386 18.8878 11.1632 19.0037 10.6921C19.023 10.6356 19.023 10.4095 18.8878 10.2965C18.7527 10.1834 18.5596 10.2211 18.4051 10.2588C18.1928 10.2965 14.9492 12.4067 8.63583 16.5705C7.7091 17.1923 6.8789 17.4937 6.12593 17.4749C5.29573 17.456 3.71256 17.0227 2.51553 16.6459C1.06751 16.1937 -0.0909093 15.9488 0.00562549 15.1574C0.0635463 14.7429 0.642754 14.3284 1.72394 13.8951Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="treadmill__text">
+      Наш Telegram канал
+    </div>
+    <div class="treadmill__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.72394 13.8951C8.48138 11.0313 12.9799 9.12835 15.2388 8.20515C21.668 5.58626 23.0195 5.13408 23.8883 5.11523C24.0814 5.11523 24.5061 5.15292 24.7957 5.37901C25.0274 5.56742 25.0854 5.81235 25.124 6.00076C25.1626 6.18917 25.2012 6.58483 25.1626 6.88628C24.8151 10.4661 23.3091 19.1517 22.5368 23.146C22.2086 24.8417 21.5715 25.4069 20.9537 25.4634C19.6022 25.5765 18.5789 24.5967 17.2853 23.7677C15.2388 22.4677 14.0997 21.6576 12.1111 20.3764C9.81355 18.9068 11.3002 18.0966 12.6131 16.7778C12.9606 16.4386 18.8878 11.1632 19.0037 10.6921C19.023 10.6356 19.023 10.4095 18.8878 10.2965C18.7527 10.1834 18.5596 10.2211 18.4051 10.2588C18.1928 10.2965 14.9492 12.4067 8.63583 16.5705C7.7091 17.1923 6.8789 17.4937 6.12593 17.4749C5.29573 17.456 3.71256 17.0227 2.51553 16.6459C1.06751 16.1937 -0.0909093 15.9488 0.00562549 15.1574C0.0635463 14.7429 0.642754 14.3284 1.72394 13.8951Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="treadmill__text">
+      Наш Telegram канал
+    </div>
+    <div class="treadmill__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.72394 13.8951C8.48138 11.0313 12.9799 9.12835 15.2388 8.20515C21.668 5.58626 23.0195 5.13408 23.8883 5.11523C24.0814 5.11523 24.5061 5.15292 24.7957 5.37901C25.0274 5.56742 25.0854 5.81235 25.124 6.00076C25.1626 6.18917 25.2012 6.58483 25.1626 6.88628C24.8151 10.4661 23.3091 19.1517 22.5368 23.146C22.2086 24.8417 21.5715 25.4069 20.9537 25.4634C19.6022 25.5765 18.5789 24.5967 17.2853 23.7677C15.2388 22.4677 14.0997 21.6576 12.1111 20.3764C9.81355 18.9068 11.3002 18.0966 12.6131 16.7778C12.9606 16.4386 18.8878 11.1632 19.0037 10.6921C19.023 10.6356 19.023 10.4095 18.8878 10.2965C18.7527 10.1834 18.5596 10.2211 18.4051 10.2588C18.1928 10.2965 14.9492 12.4067 8.63583 16.5705C7.7091 17.1923 6.8789 17.4937 6.12593 17.4749C5.29573 17.456 3.71256 17.0227 2.51553 16.6459C1.06751 16.1937 -0.0909093 15.9488 0.00562549 15.1574C0.0635463 14.7429 0.642754 14.3284 1.72394 13.8951Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="treadmill__text">
+      Наш Telegram канал
+    </div>
+    <div class="treadmill__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.72394 13.8951C8.48138 11.0313 12.9799 9.12835 15.2388 8.20515C21.668 5.58626 23.0195 5.13408 23.8883 5.11523C24.0814 5.11523 24.5061 5.15292 24.7957 5.37901C25.0274 5.56742 25.0854 5.81235 25.124 6.00076C25.1626 6.18917 25.2012 6.58483 25.1626 6.88628C24.8151 10.4661 23.3091 19.1517 22.5368 23.146C22.2086 24.8417 21.5715 25.4069 20.9537 25.4634C19.6022 25.5765 18.5789 24.5967 17.2853 23.7677C15.2388 22.4677 14.0997 21.6576 12.1111 20.3764C9.81355 18.9068 11.3002 18.0966 12.6131 16.7778C12.9606 16.4386 18.8878 11.1632 19.0037 10.6921C19.023 10.6356 19.023 10.4095 18.8878 10.2965C18.7527 10.1834 18.5596 10.2211 18.4051 10.2588C18.1928 10.2965 14.9492 12.4067 8.63583 16.5705C7.7091 17.1923 6.8789 17.4937 6.12593 17.4749C5.29573 17.456 3.71256 17.0227 2.51553 16.6459C1.06751 16.1937 -0.0909093 15.9488 0.00562549 15.1574C0.0635463 14.7429 0.642754 14.3284 1.72394 13.8951Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="treadmill__text">
+      Наш Telegram канал
+    </div>
+  </div>
+  <div class="treadmill__box">
+    Все наши новости и ответы на вопросы
+  </div>
+</section>
+
+<section class="news">
+<div class="wrapper">
+  <div class="news__wrap">
+    <div class="news__top">
+      <div class="news__title">
+        О нас пишут
+      </div>
+      <div class="news__subtitle">
+        Новости о нас в официальных сми
+      </div>
+    </div>
+    <div class="news__items">
+      <div class="news__item">
+        <div class="news__item-top">
+          <img src="images/news/news.svg" class="news__item-img" alt="">
+        </div>
+        <div class="news__item-date">
+          07 декабря 2023 17:39
+
+        </div>
+        <div class="news__item-title">
+          В России запущен
+          ИИ-сервис для создания   карточек на маркетплейсах
+        </div>
+        <div class="news__item-desc">
+          COCOON представил новую технологию обработки изображений при помощи искусственного интеллекта, ориентированную на коммерческое использование.
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news__item-top">
+          <img src="images/news/ved.svg" class="news__item-img" alt="">
+        </div>
+        <div class="news__item-date">
+          07 декабря 2023 17:39
+
+        </div>
+        <div class="news__item-title">
+          В России запущен
+          ИИ-сервис для создания   карточек на маркетплейсах
+        </div>
+        <div class="news__item-desc">
+          COCOON представил новую технологию обработки изображений при помощи искусственного интеллекта, ориентированную на коммерческое использование.
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news__item-top">
+          <img src="images/news/rbk.svg" class="news__item-img" alt="">
+        </div>
+        <div class="news__item-date">
+          19 дек 2023, 19:17
+        </div>
+        <div class="news__item-title">
+          В России появилась нейросеть для маркетплейсов
+        </div>
+        <div class="news__item-desc">
+          COCOON представил новую технологию обработки изображений при помощи искусственного интеллекта, ориентированную на коммерческое использование.
+        </div>
+      </div>
+      <div class="news__items-tooltip">
+        Читать...
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+@@include('inc/page-footer.html')
+
+@@include('inc/doc-end.html')

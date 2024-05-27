@@ -1,0 +1,32 @@
+<svg width="674" height="496" viewBox="0 0 674 496" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_393_16255)">
+<path d="M32 496C14.3269 496 3.19895e-05 481.673 2.99351e-05 464L-2.02821e-05 32C-2.23365e-05 14.3269 14.3269 -3.11438e-05 32 -3.19163e-05L642 -2.80627e-05C659.673 -2.88352e-05 674 14.3269 674 32L674 464C674 481.673 659.673 496 642 496L32 496Z" fill="url(#paint0_radial_393_16255)"/>
+<path d="M32 496C14.3269 496 3.19895e-05 481.673 2.99351e-05 464L-2.02821e-05 32C-2.23365e-05 14.3269 14.3269 -3.11438e-05 32 -3.19163e-05L642 -2.80627e-05C659.673 -2.88352e-05 674 14.3269 674 32L674 464C674 481.673 659.673 496 642 496L32 496Z" fill="url(#pattern0)"/>
+</g>
+<g clip-path="url(#clip1_393_16255)">
+<path d="M32 496C14.3269 496 3.19895e-05 481.673 2.99351e-05 464L-2.02821e-05 32C-2.23365e-05 14.3269 14.3269 -3.11438e-05 32 -3.19163e-05L642 -2.80627e-05C659.673 -2.88352e-05 674 14.3268 674 32L674 464C674 481.673 659.673 496 642 496L32 496Z" fill="url(#paint1_radial_393_16255)"/>
+<path d="M32 496C14.3269 496 3.19895e-05 481.673 2.99351e-05 464L-2.02821e-05 32C-2.23365e-05 14.3269 14.3269 -3.11438e-05 32 -3.19163e-05L642 -2.80627e-05C659.673 -2.88352e-05 674 14.3268 674 32L674 464C674 481.673 659.673 496 642 496L32 496Z" fill="url(#pattern1)"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_393_16255" transform="matrix(0 0.000812303 -0.00106145 0 1.09393 0.0489758)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_393_16255" transform="matrix(0 0.000812303 -0.00106145 0 1.09393 0.0489758)"/>
+</pattern>
+<radialGradient id="paint0_radial_393_16255" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(337 248) scale(337 248)">
+<stop stop-color="#33284D"/>
+<stop offset="1" stop-color="#1D1827"/>
+</radialGradient>
+<radialGradient id="paint1_radial_393_16255" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(337 248) scale(337 248)">
+<stop stop-color="#33284D"/>
+<stop offset="1" stop-color="#1D1827"/>
+</radialGradient>
+<clipPath id="clip0_393_16255">
+<rect width="336" height="496" fill="white"/>
+</clipPath>
+<clipPath id="clip1_393_16255">
+<rect width="338" height="496" fill="white" transform="translate(336)"/>
+</clipPath>
+</defs>
+</svg>

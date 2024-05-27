@@ -1,0 +1,246 @@
+.rates {
+	padding-top: 64px;
+	padding-bottom: 245px;
+	&__top {
+		text-align: center;
+		margin-bottom: 104px;
+	}
+	&__title {
+		margin-top: 16px;
+		margin-bottom: 32px;
+	}
+	&__subtitle {
+		max-width: 606px;
+		color: #9ba8bf;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 24px;
+		margin: 0 auto;
+	}
+	&__row {
+		max-width: 1024px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 56px 32px;
+		margin: 0 auto;
+	}
+	&__coll {
+		width: calc(33.333% - 22px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding: 72px 48px 40px;
+		border-radius: 32px;
+		border: 1px solid rgba(50, 45, 64, 0.48);
+		background: radial-gradient(118% 112.1% at 95.03% 2.5%, #1d1a24 0%, #18151f 50%, #16131d 100%);
+		box-shadow: 0px 6px 64px 0px #110f16;
+		position: relative;
+		&-top {
+			margin-bottom: 56px;
+		}
+		&-box {
+			text-align: center;
+			margin-bottom: 33px;
+		}
+	}
+	&__icon {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		top: -40px;
+		left: calc(50% - 40px);
+		z-index: 10;
+	}
+	&__tab {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 8px 32px;
+		color: #cf61f5;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		letter-spacing: 0.32px;
+		border-radius: 200px;
+		border: 2px solid #a917dc;
+		box-shadow: 0px 6px 64px 0px rgba(201, 63, 250, 0.3);
+		position: relative;
+		z-index: 10;
+		margin: 0 auto 32px;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			border-radius: 200px;
+			border: 7px solid #a917dc;
+			opacity: 0.1;
+		}
+	}
+	&__caption {
+		font-family: "TT Fors", sans-serif;
+		color: #f4f5f9;
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 48px;
+	}
+	&__price {
+		font-family: "TT Fors", sans-serif;
+		color: #f4f5f9;
+		font-size: 48px;
+		font-weight: 600;
+		line-height: 48px;
+	}
+	&__desc {
+		font-family: "TT Fors", sans-serif;
+		color: #3c445e;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 32px;
+	}
+	&__item {
+		font-family: "TT Fors", sans-serif;
+		display: flex;
+		align-items: flex-start;
+		gap: 12px;
+		color: #7a87a3;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		&-icon {
+			width: 32px;
+			height: 32px;
+			margin-top: -5px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+		&-caption {
+			flex: 1;
+			padding-top: 2px;
+		}
+		& + & {
+			margin-top: 12px;
+		}
+	}
+	.caption {
+		justify-content: center;
+	}
+}
+.rates-info {
+	max-width: 672px;
+	margin: 104px auto 0;
+	&__title {
+		font-family: "TT Fors", sans-serif;
+		color: #fff;
+		font-size: 48px;
+		font-weight: 400;
+		line-height: 56px;
+		letter-spacing: -0.48px;
+		text-align: center;
+		margin-bottom: 32px;
+	}
+	&__items {
+		ul {
+			padding-left: 30px;
+			list-style-type: disc;
+			li {
+				color: #9ba8bf;
+				font-size: 20px;
+				font-weight: 300;
+				line-height: 24px;
+			}
+		}
+	}
+}
+@media (max-width: 1380px) {
+}
+@media (max-width: 1199px) {
+	.rates {
+		padding-top: 40px;
+		padding-bottom: 120px;
+		&__title {
+			margin-top: 15px;
+			margin-bottom: 20px;
+		}
+		&__subtitle {
+			max-width: 550px;
+			font-size: 18px;
+		}
+		&__coll {
+			padding: 72px 24px 40px;
+		}
+	}
+	.rates-info {
+		margin-top: 80px;
+	}
+}
+@media (max-width: 1010px) {
+	.rates {
+		&__coll {
+			width: calc(50% - 22px);
+		}
+	}
+}
+@media (max-width: 760px) {
+	.rates {
+		padding-top: 120px;
+		&__top {
+			margin-bottom: 130px;
+		}
+		&__title {
+			margin-bottom: 15px;
+		}
+		&__subtitle {
+			font-size: 16px;
+			letter-spacing: -0.18px;
+		}
+		&__row {
+			.slick-list {
+				padding: 40px 20px 0px !important;
+				margin: -40px -20px 0px;
+			}
+		}
+		&__coll {
+			width: 320px !important;
+			margin: 0px 7.5px;
+			text-align: center;
+		}
+		&__caption {
+			font-size: 32px;
+			line-height: 48px;
+		}
+		&__price {
+			font-size: 48px;
+			line-height: 48px;
+		}
+		&__item {
+			text-align: left;
+		}
+	}
+	.rates-info {
+		margin-top: 130px;
+		&__title {
+			font-size: 35px;
+			line-height: 35px;
+			letter-spacing: -0.35px;
+			margin-bottom: 25px;
+		}
+		&__items {
+			ul {
+				padding-left: 30px;
+				li {
+					font-size: 16px;
+					font-weight: 300;
+					letter-spacing: -0.18px;
+				}
+			}
+		}
+	}
+}

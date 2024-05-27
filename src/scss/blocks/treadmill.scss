@@ -1,0 +1,163 @@
+.treadmill{
+  overflow: hidden;
+  padding: 104px 0;
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  &.active{
+   .treadmill{
+    &__text{
+      color: #C450ED;
+    }
+    &__wrap{
+      animation-play-state: paused;
+    }
+    &__icon{
+      svg{
+        path{
+          fill: #C450ED;
+        }
+      }
+    }
+   }
+  }
+  &::after,
+  &::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  &::before{
+    left: 0;
+    background: linear-gradient(to right, rgba(17, 15, 22,  1), rgba(17, 15, 22, .5), rgba(17, 15, 22, 0) );
+  }
+  &::after{
+    right: 0;
+    background: linear-gradient(to left, rgba(17, 15, 22,  1), rgba(17, 15, 22, .5), rgba(17, 15, 22, 0) );
+  }
+  &__overlay{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+    &__wrap{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+    &:hover{
+      animation-play-state: paused;
+    }
+  }
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  &__box{
+    padding: 0 20px;
+    height: 65px;
+    border-radius: 300px;
+    border: 1px solid #2C2737;
+    background: radial-gradient(164.03% 150.24% at 20.29% 13.47%, rgba(29, 26, 36, 0.90) 0%, rgba(24, 21, 31, 0.90) 50%, rgba(22, 19, 29, 0.90) 100%);
+    box-shadow: 0px 2px 32px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4.5px);
+    color:  #E3E5EB;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.18px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    transform: translate(-45%, 30%);
+    &.show{
+      opacity: 1;
+    }
+  }
+  &__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 1px solid #2C2737;
+    background: radial-gradient(164.03% 150.24% at 20.29% 13.47%, #1D1A24 0%, #18151F 50%, #16131D 100%);
+    box-shadow: 0px 2px 32px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+    svg{
+      width: 30px;
+      height: 30px;
+      path{
+        transition: .3s ease-in-out;
+      }
+    }
+  }
+  &__text{
+    white-space: nowrap;
+    color: #FFF;
+    text-align: center;
+    font-size: 114px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120px;
+    letter-spacing: 2.28px;
+    transition: .3s ease-in-out;
+  }
+}
+@media (max-width: 1199px){
+  .treadmill{
+   &__text{
+    font-size: 85px;
+    line-height: 88px;
+   }
+   &__icon{
+    width: 48px;
+    height: 48px;
+  svg{
+    width: 24px;height: 24px;
+  }
+  }
+  }
+}
+@media (max-width: 1010px) {
+  .treadmill{
+    padding: 35px 0;
+    &__wrap{
+      gap: 32px;
+    }
+    &__icon{
+      width: 40px;
+      height: 40px;
+    svg{
+      width: 20px;height: 20px;
+    }
+    }
+    &__text{
+      font-size: 45px;
+line-height: 50px;
+letter-spacing: 0.9px;
+    }
+    &__box{
+      display: none;
+    }
+  }
+}

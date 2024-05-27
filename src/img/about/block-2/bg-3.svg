@@ -1,0 +1,18 @@
+<svg width="234" height="496" viewBox="0 0 234 496" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M32 496C14.3269 496 -4.78665e-07 481.673 -1.25698e-06 464L-2.02821e-05 32C-2.10604e-05 14.3269 14.3269 -6.26248e-07 32 -1.39876e-06L202 -8.8297e-06C219.673 -9.60222e-06 234 14.3269 234 32L234 464C234 481.673 219.673 496 202 496L32 496Z" fill="url(#paint0_radial_393_14908)"/>
+<path d="M32 496C14.3269 496 -4.78665e-07 481.673 -1.25698e-06 464L-2.02821e-05 32C-2.10604e-05 14.3269 14.3269 -6.26248e-07 32 -1.39876e-06L202 -8.8297e-06C219.673 -9.60222e-06 234 14.3269 234 32L234 464C234 481.673 219.673 496 202 496L32 496Z" fill="url(#paint1_radial_393_14908)"/>
+<path d="M32 496C14.3269 496 -4.78665e-07 481.673 -1.25698e-06 464L-2.02821e-05 32C-2.10604e-05 14.3269 14.3269 -6.26248e-07 32 -1.39876e-06L202 -8.8297e-06C219.673 -9.60222e-06 234 14.3269 234 32L234 464C234 481.673 219.673 496 202 496L32 496Z" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_393_14908" transform="matrix(0 0.00262286 -0.0012374 -1.14649e-10 1.05847 -1.19338)"/>
+</pattern>
+<radialGradient id="paint0_radial_393_14908" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(47.5312 403) rotate(-35.6974) scale(277.633 433.394)">
+<stop stop-color="#EE64E8"/>
+<stop offset="1" stop-color="#890384"/>
+</radialGradient>
+<radialGradient id="paint1_radial_393_14908" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(66 135) rotate(43.6574) scale(181.069 294.08)">
+<stop offset="0.0001" stop-color="#FFE3CA"/>
+<stop offset="1" stop-color="#FFD79A"/>
+</radialGradient>
+</defs>
+</svg>

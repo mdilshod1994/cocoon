@@ -1,0 +1,38 @@
+<svg width="353" height="300" viewBox="0 0 353 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_313_13871" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="353" height="300">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M353 35C353 15.67 337.33 0 318 0H35C15.67 0 0 15.67 0 35V282.462C0 292.148 7.85209 300 17.5382 300C23.0163 300 28.1798 297.44 31.4965 293.08L49.96 268.809C56.579 260.108 66.8835 255 77.8159 255H274.184C285.116 255 295.421 260.108 302.04 268.809L320.303 292.816C323.746 297.343 329.106 300 334.793 300C344.849 300 353 291.849 353 281.793V35Z" fill="black"/>
+</mask>
+<g mask="url(#mask0_313_13871)">
+<g clip-path="url(#clip0_313_13871)">
+<g clip-path="url(#clip1_313_13871)">
+<path d="M32 300C14.3269 300 1.28206e-05 285.673 1.11112e-05 268L-1.17147e-05 32C-1.3424e-05 14.3269 14.3269 -3.11438e-05 32 -3.19163e-05L321 -4.45489e-05C338.673 -4.53214e-05 353 14.3269 353 32L353 268C353 285.673 338.673 300 321 300L32 300Z" fill="url(#paint2_radial_313_13871)"/>
+</g>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_313_13871" transform="matrix(0 0.00116318 -0.00136868 0 0.984286 -0.0821529)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_313_13871" transform="matrix(0 0.00101983 -0.0012 0 1.10667 -0.0580737)"/>
+</pattern>
+<radialGradient id="paint0_radial_313_13871" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(71.7031 243.75) rotate(-16.0705) scale(353.962 310.167)">
+<stop stop-color="#EE64E8"/>
+<stop offset="1" stop-color="#890384"/>
+</radialGradient>
+<radialGradient id="paint1_radial_313_13871" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(71.7031 243.75) rotate(-16.0705) scale(353.962 310.167)">
+<stop stop-color="#EE64E8"/>
+<stop offset="1" stop-color="#890384"/>
+</radialGradient>
+<radialGradient id="paint2_radial_313_13871" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(176.5 176.625) scale(176.5 176.625)">
+<stop stop-color="#373244"/>
+<stop offset="1" stop-color="#24212C"/>
+</radialGradient>
+<clipPath id="clip0_313_13871">
+<rect width="353" height="300" rx="35" fill="white"/>
+</clipPath>
+<clipPath id="clip1_313_13871">
+<rect width="353" height="300" fill="white"/>
+</clipPath>
+</defs>
+</svg>
