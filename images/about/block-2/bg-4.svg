@@ -1,0 +1,13 @@
+<svg width="234" height="496" viewBox="0 0 234 496" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M32 496C14.3269 496 -4.78663e-07 481.673 -1.25698e-06 464L-2.02821e-05 32C-2.10604e-05 14.3269 14.3269 -6.26248e-07 32 -1.39876e-06L202 -8.8297e-06C219.673 -9.60222e-06 234 14.3269 234 32L234 464C234 481.673 219.673 496 202 496L32 496Z" fill="url(#paint0_linear_374_20178)"/>
+<path d="M32 496C14.3269 496 -4.78663e-07 481.673 -1.25698e-06 464L-2.02821e-05 32C-2.10604e-05 14.3269 14.3269 -6.26248e-07 32 -1.39876e-06L202 -8.8297e-06C219.673 -9.60222e-06 234 14.3269 234 32L234 464C234 481.673 219.673 496 202 496L32 496Z" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_374_20178" transform="matrix(0 0.00169964 -0.00078217 0 1.02172 -0.428452)"/>
+</pattern>
+<linearGradient id="paint0_linear_374_20178" x1="-23.8544" y1="116.56" x2="266.96" y2="189.853" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#DEDEDE"/>
+</linearGradient>
+</defs>
+</svg>
