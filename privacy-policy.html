@@ -30,13 +30,13 @@
 			<nav class="header__menu">
 				<ul>
 					<li>
-						<a href="index.html#main-info">О продукте</a>
+						<a href="#main-info">О продукте</a>
 					</li>
 					<li>
-						<a href="index.html#steps">Как это работает</a>
+						<a href="#steps">Как это работает</a>
 					</li>
 					<li>
-						<a href="index.html#future">Что нового</a>
+						<a href="#application">Приложение</a>
 					</li>
 					<li>
 						<a href="rates.html">Тарифы</a>
@@ -57,7 +57,7 @@
 		</a>
 		<div class="header__nav">
 			<a href="rates.html" class="header__link">Тарифы</a>
-			<a href="#" class="header__link header__link_purple">Войти</a>
+			<a href="https://lk.coco-on.ru/auth/login" class="header__link header__link_purple">Войти</a>
 		</div>
 		<div class="header__burger">
 			<div class="header__burger-box">
@@ -68,6 +68,7 @@
 		</div>
 	</div>
 </header>
+
 
 <section class="main-page">
 	<div class="wrapper">
@@ -623,31 +624,20 @@
 			</div>
 			<div class="footer__body">
 				<div class="footer__left">
-					<!--div class="footer__social">
-						<a href="#" class="footer__social-link">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-								fill="none">
-								<path
-									d="M15.1135 5.4443C13.9172 5.4443 13.5771 5.9723 13.5771 7.1363V9.0575H16.759L16.4455 12.1697H13.5765V21.5999H9.7687V12.1691H7.20001V9.0569H9.7699V7.1897C9.7699 4.0499 11.0349 2.3999 14.5835 2.3999C15.345 2.3999 16.2561 2.4599 16.8 2.5355V5.4575"
-									stroke="#F4F5F9" />
-							</svg>
+					<div class="footer__social">
+						<a href="https://t.me/cocoonai" class="footer__social-link" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M17.3643 21.8119L10.4724 16.2983C10.007 15.926 9.96858 15.2318 10.39 14.8104L16.8 8.40039L7.54679 13.6053C7.32409 13.7306 7.06188 13.7659 6.81399 13.7039L1.47785 12.3699C1.00943 12.2527 0.962635 11.6055 1.40934 11.4222L21.6019 3.13808C22.3544 2.82934 23.1412 3.50047 22.9548 4.29229L18.9624 21.26C18.7942 21.9752 17.938 22.2708 17.3643 21.8119Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
 						</a>
-						<a href="#" class="footer__social-link">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-								fill="none">
-								<path
-									d="M15.1135 5.4443C13.9172 5.4443 13.5771 5.9723 13.5771 7.1363V9.0575H16.759L16.4455 12.1697H13.5765V21.5999H9.7687V12.1691H7.20001V9.0569H9.7699V7.1897C9.7699 4.0499 11.0349 2.3999 14.5835 2.3999C15.345 2.3999 16.2561 2.4599 16.8 2.5355V5.4575"
-									stroke="#F4F5F9" />
-							</svg>
-						</a>
-					</!--div-->
+					</div>
 				</div>
 				<div class="footer__right">
 					<div class="footer__store">
-						<a href="#" class="footer__store-link">
+						<a href="https://apps.apple.com/ru/app/cocoon-ai/id6477373990" class="footer__store-link">
 							<img src="images/application/appstore.svg" alt="">
 						</a>
-						<a href="#" class="footer__store-link">
+						<a href="https://play.google.com/store/apps/details?id=ru.cocoon.cocoon&pli=1" class="footer__store-link">
 							<img src="images/application/googleplay.svg" alt="">
 						</a>
 					</div>
@@ -659,13 +649,13 @@
 				<nav class="footer__menu">
 					<ul>
 						<li>
-							<a href="index.html#main-info">О продукте</a>
+							<a href="#main-info">О продукте</a>
 						</li>
 						<li>
-							<a href="index.html#steps">Как это работает</a>
+							<a href="#steps">Как это работает</a>
 						</li>
 						<li>
-							<a href="index.html#future">Что нового</a>
+							<a href="#application">Приложение</a>
 						</li>
 						<li>
 							<a href="rates.html">Тарифы</a>
@@ -675,7 +665,7 @@
 				<button class="footer__btn btn">Войти</button>
 			</div>
 			<div class="footer__body">
-				<div class="footer__copyright">Copyright © 2023 Cocoon. Все права защищены.</div>
+				<div class="footer__copyright">Copyright © <span id="cr-year"></span>  Cocoon. Все права защищены.</div>
 				<div class="footer__list">
 					<a href="public-offer.html" class="footer__link">Условия соглашения</a>
 					<a href="privacy-policy.html" class="footer__link">Политика конфиденциальности</a>
@@ -684,10 +674,11 @@
 		</div>
 		<div class="footer__info">
 			<a href="https://repin.agency/" class="footer__developer" target="_blank">Сreated by Repin Agency</a>
-			<div class="footer__year">©2023</div>
+			<div class="footer__year">©<span id="cr-year"></span></div>
 		</div>
 	</div>
 </footer>
+
 
 </main>
 <script src="js/libs.js"></script>
