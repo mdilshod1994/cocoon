@@ -127,18 +127,23 @@
     &-logo{
       width: 60px;height: 60px;padding: 10px;
       img{
-        width: 36px;height: 36px;
+        opacity: 1 !important;
+        width: 36px;
+        height: 36px;
+        &:nth-child(1){
+          display: none;
+        }
       }
     }
     &-title{
       font-size: 17px;
-line-height: 20px;
-letter-spacing: -0.18px;
+      line-height: 20px;
+      letter-spacing: -0.18px;
     }
     &-text{
       font-size: 14px;
-line-height: 24px;
-letter-spacing: -0.18px;
+      line-height: 24px;
+      letter-spacing: -0.18px;
     }
   }
   &__top {
@@ -147,13 +152,13 @@ letter-spacing: -0.18px;
   }
   &__title{
     font-size: 35px;
-line-height: 35px;
-letter-spacing: -0.35px
+    line-height: 35px;
+    letter-spacing: -0.35px
   }
   &__subtitle{
     font-size: 15px;
-line-height: 20px;
-letter-spacing: -0.9px;
+    line-height: 20px;
+    letter-spacing: -0.9px;
   }
 }
 }
