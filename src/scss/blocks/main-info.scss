@@ -13,7 +13,8 @@
 		span {
 			opacity: 0.05;
 			transition: opacity 0.2s linear;
-      &:nth-child(2){
+      &:nth-child(2),
+      &:nth-child(3){
         background: var(--gardient-gardient-main, linear-gradient(84deg, #A917DC -4.82%, #CA40FB 102.75%));
         background-clip: text;
         -webkit-background-clip: text;
