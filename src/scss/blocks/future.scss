@@ -243,15 +243,31 @@
 		padding-top: 16px;
 		&-title {
 			margin-top: 10px;
-			margin-bottom: 32px;
+			margin-bottom: 16px;
 		}
 		&-desc {
 			font-family: "TT Fors", sans-serif;
-			max-width: 275px;
 			font-size: 16px;
 			line-height: 24px;
 			letter-spacing: -0.16px;
 		}
+    &-btn{
+      margin-top: 32px;
+      display: flex;
+      padding: 10px 32px 14px 32px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 200px;
+      background: var(--gardient-gardient-main, linear-gradient(84deg, #A917DC -4.82%, #CA40FB 102.75%));
+      box-shadow: 0px 3px 15px 0px rgba(201, 63, 250, 0.30), 0px 6px 30px 0px rgba(201, 63, 250, 0.30);
+      color:#FFF;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      width: max-content;
+    }
 	}
 	&__info {
 		font-family: "TT Fors", sans-serif;
@@ -512,6 +528,9 @@
 				color: #7a87a3;
         letter-spacing: -0.09px;
 			}
+      &-btn{
+        display: none;
+      }
 		}
 		&__info {
 			padding: 0;

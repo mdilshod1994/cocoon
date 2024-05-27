@@ -1,10 +1,9 @@
 .c-video{
   max-width: 1440px;
   margin: 0 auto;
-  aspect-ratio: 16/9;
   padding: 32px;
   &__wrap{
-    height: 100%;
+    aspect-ratio: 16/9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,9 +16,28 @@
     }
   }
 }
+@media (max-width: 1199px) {
+	.c-video{
+    padding: 40px 32px;
+    &__wrap{
+      border-radius: 24px;
+    }
+  }
+}
+@media (max-width: 1010px) {
+	.c-video{
+    padding: 80px 24px;
+    &__wrap{
+      border-radius: 16px;
+    }
+  }
+}
 
 @media (max-width: 760px) {
   .c-video{
-    // display: none;
+    padding: 100px 0;
+    &__wrap{
+      border-radius: 0;
+    }
   }
 }

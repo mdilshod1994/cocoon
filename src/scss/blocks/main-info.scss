@@ -25,13 +25,13 @@
 @media (max-width: 1380px) {
 	.main-info {
 		padding-top: 180px;
-		padding-bottom: 100px;
+		padding-bottom: 180px;
 	}
 }
 @media (max-width: 1199px) {
 	.main-info {
 		padding-top: 120px;
-		padding-bottom: 80px;
+		padding-bottom: 120px;
 		&__title {
 			font-size: 32px;
 			line-height: 42px;
@@ -41,7 +41,7 @@
 @media (max-width: 1010px) {
 	.main-info {
 		padding-top: 100px;
-		padding-bottom: 50px;
+		padding-bottom: 100px;
 		&__title {
 			font-size: 28px;
 			line-height: 32px;
@@ -51,7 +51,7 @@
 @media (max-width: 760px) {
 	.main-info {
 		padding-top: 209px;
-		padding-bottom: 149px;
+		padding-bottom: 209px;
 		&__title {
 			font-size: 27px;
 			line-height: 36px;

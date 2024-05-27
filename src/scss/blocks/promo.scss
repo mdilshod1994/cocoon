@@ -4,14 +4,26 @@
   &__btns{
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 10px;
     &-icon{
+      transition: .3s ease-in-out;
       padding: 14px;
       border-radius: 200px;
       border: 1px solid #403B4E;
       background: radial-gradient(126.61% 82.13% at 20.29% 13.47%, #2E2B35 0%, rgba(35, 32, 44, 0.83) 50%, rgba(40, 37, 49, 0.46) 99.65%);
       svg{
         width: 28px;height: 28px;
+        path{
+          transition: .3s ease-in-out;
+        }
+      }
+      &:hover{
+        transform: scale(1.1);
+        svg{
+          path{
+            stroke: #CA40FB ;
+          }
+        }
       }
     }
   }
@@ -27,7 +39,7 @@
 		background-size: contain;
 		background-position: bottom right;
 		border-radius: 15px;
-		padding: 128px 56px;
+		padding: 80px 56px 0
 	}
 	&__title {
 		margin-top: 24px;
@@ -293,6 +305,9 @@
     z-index: 2;
     height: 100%;
     width: 100%;
+    &.-mob{
+      display: none;
+    }
   }
   &__img {
     height: 100%;
@@ -547,7 +562,7 @@
 	.promo {
 		&__left {
 			width: calc(50% - 10px);
-			padding: 80px 40px;
+			padding: 45px 40px 0;
 		}
 		&__right {
 			width: calc(50% - 10px);
@@ -696,7 +711,6 @@
 		padding-top: 20px;
     &__btns{
       justify-content: center;
-      gap: 10px;
       &-icon{
         display: flex;
         align-items: center;
@@ -758,21 +772,45 @@
 	}
 }
 @media (max-width: 760px) {
+  .before-after{
+    &__tr-bg{
+      &.-desk{
+        display: none;
+      }
+      &.-mob{
+        display: flex;
+      }
+    }
+  }
   .promo-nav{
     border-radius: initial;
-    width: 82px;
+    width: clamp(80px, 24% ,170px);
+    height: clamp(100px, 29%, 215px);
+    left: 0;
+    top: 0;
+    border-radius: clamp( 15px, 16%, 32px);
+    border: 1px solid rgba(50, 45, 64, 0.48);
+    background: radial-gradient(74.82% 65.3% at 20.29% 13.47%, #1D1A24 0%, #18151F 50%, #16131D 100%);
     &__block{
       padding: 10px;
-      border-radius: 15px;
-      border: 1px solid rgba(50, 45, 64, 0.48);
-      background: radial-gradient(74.82% 65.3% at 20.29% 13.47%, #1D1A24 0%, #18151F 50%, #16131D 100%);
+      background: none;
     }
     &__content,
     &__btns{
       display: none;
     }
+    &__wrap,
     &__photo{
       width: 100%;
+      height: 100%;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &__photo{
+      border-radius: clamp(8px, 12%, 18px);
     }
   }
 	.promo {
@@ -884,6 +922,8 @@
     right: 10px;
     button{
       height: 45px;
+      background: rgba(0, 0, 0, 0.80);
+      backdrop-filter: blur(7px);
     }
   }
 }
