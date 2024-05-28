@@ -68,6 +68,7 @@ color: 'header--light'
                 <img src="images/promo-2/preview-2.png" alt="" draggable="false" data-ba-object="2">
               </div>
             </div>
+            <img src="images/promo-2/nav-bg.png" class="promo-nav__block-img" alt="">
           </div>
         </div>
         <div class="before-after" class="dark-background">
@@ -220,7 +221,7 @@ color: 'header--light'
   <div class="c-video__wrap">
     <iframe id="player" src="http://www.youtube.com/embed/-dr-wvPjGFo?version=3&autoplay=1&loop=1&mute=1&controls=0&playlist=-dr-wvPjGFo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <div class="c-video__overlay">
-      <div class="c-video__overlay-btn">
+      <div class="c-video__overlay-btn" id="video-btn">
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
           <path d="M4.5 7.54934H3.5H4.5ZM11.3949 3.57821L10.9172 4.45672L11.3949 3.57821ZM11.3949 32.4218L11.8727 33.3003H11.8727L11.3949 32.4218ZM4.5 28.4507H5.5H4.5ZM30.6129 21.9711L30.1351 21.0926L30.6129 21.9711ZM30.6128 14.0289L30.1351 14.9074L30.6128 14.0289ZM30.1351 21.0926L10.9172 31.5433L11.8727 33.3003L31.0906 22.8496L30.1351 21.0926ZM5.5 28.4507L5.5 7.54934L3.5 7.54934L3.5 28.4507H5.5ZM10.9172 4.45672L30.1351 14.9074L31.0906 13.1504L11.8726 2.69971L10.9172 4.45672ZM5.5 7.54934C5.5 4.87992 8.45834 3.11961 10.9172 4.45672L11.8726 2.69971C8.14471 0.672463 3.5 3.29113 3.5 7.54934L5.5 7.54934ZM10.9172 31.5433C8.45834 32.8804 5.5 31.1201 5.5 28.4507H3.5C3.5 32.7089 8.14472 35.3275 11.8727 33.3003L10.9172 31.5433ZM31.0906 22.8496C34.9698 20.7401 34.9698 15.2599 31.0906 13.1504L30.1351 14.9074C32.6216 16.2595 32.6216 19.7405 30.1351 21.0926L31.0906 22.8496Z" fill="white"/>
         </svg>
@@ -1421,6 +1422,22 @@ color: 'header--light'
   </div>
 </div>
 </section>
+
+<div class="yt-modal" id="yt-modal">
+  <div class="yt-modal__wrap">
+    <div class="yt-modal__iframe">
+      <iframe id="yt-iframe" src="http://www.youtube.com/embed/A6R22oj15-4?rel=0&enablejsapi=1" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="yt-modal__overlay" id="yt-overlay">
+
+    </div>
+    <div class="yt-modal__btn-close" id="yt-close">
+      <svg width="800px" height="800px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.79289 7.49998L4.14645 4.85353L4.85355 4.14642L7.5 6.79287L10.1464 4.14642L10.8536 4.85353L8.20711 7.49998L10.8536 10.1464L10.1464 10.8535L7.5 8.20708L4.85355 10.8535L4.14645 10.1464L6.79289 7.49998Z" fill="#000000"/>
+      </svg>
+    </div>
+  </div>
+</div>
 
 @@include('inc/page-footer.html')
 
