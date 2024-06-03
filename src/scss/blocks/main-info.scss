@@ -7,12 +7,13 @@
 	}
 	&__title {
 		color: #fff;
-		font-size: 44px;
-		line-height: 56px;
-		letter-spacing: -0.6px;
+
 		span {
-			opacity: 0.05;
+			opacity: 0.05;font-size: 44px;
+      line-height: 56px;
+      letter-spacing: -0.6px;
 			transition: opacity 0.2s linear;
+      font-family: "TT Fors", sans-serif;
       &:nth-child(2),
       &:nth-child(3){
         background: var(--gardient-gardient-main, linear-gradient(84deg, #A917DC -4.82%, #CA40FB 102.75%));
