@@ -285,7 +285,10 @@
 
 <section class="c-video">
   <div class="c-video__wrap">
-    <iframe id="player" src="http://www.youtube.com/embed/j7P_pXzRgeo?version=3&autoplay=1&loop=1&mute=1&controls=0&playlist=j7P_pXzRgeo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <video autoplay muted loop>
+      <source src="video/1920x1080_video01.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
     <div class="c-video__overlay">
       <div class="c-video__overlay-btn" id="video-btn">
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -1492,7 +1495,10 @@
 <div class="yt-modal" id="yt-modal">
   <div class="yt-modal__wrap">
     <div class="yt-modal__iframe">
-      <iframe id="yt-iframe" src="http://www.youtube.com/embed/j7P_pXzRgeo?rel=0&enablejsapi=1" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <video id="yt-modal__video" muted loop controls>
+        <source src="video/1920x1080_video01.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     </div>
     <div class="yt-modal__overlay" id="yt-overlay">
 

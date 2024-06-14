@@ -3,16 +3,13 @@ const body= document.querySelector('body')
 const YToverlay = document.getElementById("yt-overlay")
 const YTcloseBtn = document.getElementById('yt-close')
 const YTopenBtn = document.getElementById('video-btn')
-var iframe = YTModal.getElementsByTagName('iframe')[0].contentWindow;
+const video = document.getElementById('yt-modal__video')
 if(YTModal){
   YTopenBtn.addEventListener('click', ()=>{
     body.classList.add('lock')
     YTModal.classList.add('active')
-    console.log(iframe);
-    iframe.postMessage(
-      '{"event":"command","func":"' + "playVideo" + '","args":""}',
-      "*"
-    );
+    video.play()
+    video.muted= false
   })
   YToverlay.addEventListener('click', ()=>{
     closeModal()
@@ -23,9 +20,9 @@ if(YTModal){
   function closeModal(){
     YTModal.classList.remove('active')
     body.classList.remove('lock')
-    iframe.postMessage(
-      '{"event":"command","func":"' + "stopVideo" + '","args":""}',
-      "*"
-    );
+    video.pause();
+    video.muted= true
+
+    video.currentTime = 0;
   }
 }
